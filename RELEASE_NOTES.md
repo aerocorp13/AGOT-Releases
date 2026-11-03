@@ -1,15 +1,42 @@
-# AGOT Desktop release history
+# AGOT Desktop — public release notes
 
-No public Windows installer has been published or approved.
+This page describes **published Windows installers**, not all code present in AGOT's private development repository. Release times are UTC. Each version is a public preview and remains subject to native acceptance testing.
 
-The application configuration currently identifies version **1.0.0**. A release tag and channel will be selected for the exact validated installer; no stable-release status is asserted here.
+| Channel | Publication | Product version | GitHub tag | Published MSI |
+| --- | --- | --- | --- | --- |
+| **Preview 3 (current)** | **2 Nov 2026** | **1.0.2** | [`v1.0.1-preview.3`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) | `AGOT.Desktop_1.0.2_x64_en-US.msi` |
+| Preview 2 | 1 Nov 2026 | 1.0.1 | [`v1.0.1-preview.2`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.2) | `AGOT.Desktop_1.0.1_x64_en-US.msi` |
+| Preview 1 | 29 Oct 2026 | 1.0.0 | [`v1.0.0-preview.1`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.0-preview.1) | `AGOT.Desktop_1.0.0_x64_en-US.msi` |
 
-Every published version will record:
+**Naming note:** Preview 3’s tag is `v1.0.1-preview.3`, but the published release and MSI identify the **application and Windows Installer version as 1.0.2**. This historical discrepancy is recorded rather than silently relabeled.
 
-- Installer version, architecture, size and SHA-256.
-- Tested Windows versions and installation requirements.
-- Signing status, supported capabilities and known limitations.
-- Installation, upgrade, uninstall and project-retention results.
-- Links to the approved license and third-party notices.
+## Preview 3 — AGOT Desktop 1.0.2
 
-The official download page is [geotwins.org/download](https://geotwins.org/download/). Support: [admin@geotwins.org](mailto:admin@geotwins.org).
+[Open full release page](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3).
+
+**Key changes, as recorded in the published release:**
+
+- **Versioned World history:** immutable source/manual-state membership, pinned historical reads, controlled scenario forks, recorded-time corrections and permission checks on historical reads.
+- **Durable GeoAI work:** persisted plans, per-step progress, cooperative cancellation, resume after interruption, and verified action receipts. The optional bounded investigation loop supports up to four planning rounds and twelve registered tool actions.
+- **Human review:** effectful spatial processing proposals require an explicit approval step; approved outputs become revisioned datasets with upstream lineage and access control.
+- **ONNX inference bookkeeping:** retries, cancellation history, lease state and model/source/output digest checks. A compatible, authorized **user-provided model checkpoint** is needed for real segmentation.
+- **Local workstation integration:** GIS, imagery, terrain and 3D workflows use packaged backend/GIS components and a PostGIS-backed spatial runtime.
+- **Build repairs:** the release description records a PostgreSQL batch-insert fix for World source/version tests and updated GeoAI regression expectations.
+
+**Installer:** `AGOT.Desktop_1.0.2_x64_en-US.msi`, **1,394,453,352 bytes**; GitHub-published SHA-256 `07203740b2e9196cef0d6216f6a6bfff4fa9b11fbdc86cfa273850ba0cbd0a20`.
+
+**Not yet broadly validated:** clean Windows install/upgrade/uninstall and restore; live local LLM interoperability; licensed checkpoint inference accuracy; scientific simulation calibration; large-city/point-cloud/BIM coverage; complete 3D/synchronized multi-view behavior; digitally signed, portable World packages. Some cancellation remains cooperative rather than forceful. Integrity hashes do not equal digital signatures.
+
+## Preview 2 — 1.0.1
+
+[Release](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.2). A more complete ribbon-oriented GIS workstation and expanded MapLibre, editing, PMTiles, catalogs, imagery/STAC pathways, GIS geoprocessing and 3D development foundations. Enhanced permissions, private model credentials and plugin package validation. Some advanced workflows remained experimental.
+
+## Preview 1 — 1.0.0
+
+[Release](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.0-preview.1). Initial public Windows desktop MSI distributing the early integrated GIS, terrain and twin workbench.
+
+## Prior to installation
+
+Read [Installation](docs/INSTALLATION.md), [Quality and limitations](docs/QUALITY_AND_LIMITATIONS.md) and the **actual per-release notes**. Back up projects before changing versions. Do not equate a published package, passing isolated unit tests or a demo with complete platform validation. Future functionality is tracked in [Roadmap](ROADMAP.md).
+
+This repository is a **distribution endpoint**; its GitHub-generated source archives are not AGOT's private application source. Contact [admin@geotwins.org](mailto:admin@geotwins.org) for support.

@@ -1,9 +1,21 @@
-# Security reporting
+# AGOT Desktop — responsible security disclosure
 
-Please email **admin@geotwins.org** with the subject `AGOT security report` to report a suspected vulnerability privately.
+Report a suspected AGOT installer, desktop, data-permission, GeoAI tool-execution or model credential vulnerability **privately** to [admin@geotwins.org](mailto:admin@geotwins.org) with subject **AGOT security report**.
 
-Include the affected application version, Windows version, a description and reproduction steps. Redact credentials, personal data and private datasets. Do not attach private projects or tokens to a public GitHub issue. Coordinate a secure transfer with support if a sensitive sample is necessary.
+Include the exact affected product version/tag, Windows version, expected vs observed access or behavior, impact and minimal safe reproduction steps. Do not send real customer datasets, access tokens, passwords, personal information or source archives in ordinary email; coordinate a secure transfer if absolutely necessary.
 
-No response-time commitment or security certification is implied. Public installer releases will list their tested versions and known limitations. Until a release is published, no publicly distributed version is claimed to be supported.
+## Current distribution and supported channels
 
-Download installers only through [GeoTwins Africa](https://geotwins.org/download/) or this repository's GitHub Releases. Verify each installer against its release checksum, and consult its stated signing status.
+AGOT Desktop has published **Preview 1 (1.0.0), Preview 2 (1.0.1) and Preview 3 (1.0.2)** Windows MSI assets; all are **pre-release evaluation builds**. Publication does not imply a security certification, defined support SLA or a guarantee that older previews will receive fixes. The [latest published release](https://github.com/aerocorp13/AGOT-Releases/releases/latest) and its limitations determine what is being distributed now.
+
+Download only through this repository's [GitHub Releases](https://github.com/aerocorp13/AGOT-Releases/releases) or [GeoTwins Africa](https://geotwins.org/download/). Compare the asset's GitHub SHA-256 digest where available; check the actual signing status separately. A matching hash is not equivalent to code signing or proof that a binary is safe.
+
+## High-impact areas
+
+Please report unsafe cross-user/tenant data access, historical World source permission bypass, unauthorized side-effect execution, private model credential disclosure, forged/replayed action receipts, insecure updates/installers, malicious plugins or unsafe external data fetches.
+
+Do not perform destructive testing against other users or production systems. Do not publish proof-of-concept exploit details before private coordination.
+
+We aim to triage reports responsibly but do **not** promise a fixed response time or bug-bounty reward.
+
+Other problems can be reported through sanitized [GitHub Issues](https://github.com/aerocorp13/AGOT-Releases/issues). Installation and integrity guidance: [docs/INSTALLATION.md](docs/INSTALLATION.md).
