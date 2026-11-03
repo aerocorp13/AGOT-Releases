@@ -7,7 +7,7 @@ AGOT brings professional geospatial workflows, versioned operational worlds, hum
 
 > **Public preview — not a stable production release.** Published capabilities are unevenly mature. Real data, licensing and professional decisions remain the user's responsibility. The latest public installer is **AGOT Desktop 1.0.2 / Preview 3**, published 2 November 2026 (UTC).
 
-[**Download latest public release**](https://github.com/aerocorp13/AGOT-Releases/releases/latest) · [**Download Preview 3 directly**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
+[**Download latest public release**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) · [**Download Preview 3 directly**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
 
 ## Current downloadable build
 

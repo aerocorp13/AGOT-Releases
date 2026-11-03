@@ -38,4 +38,4 @@ A team should be able to preserve one **Operational World** grounded in observed
 
 GeoTwins Africa's broader portfolio also includes GIS Assistant, Hybrid Map Viewer, Street AI Mapper and Physical Planning Assistant. AGOT is the flagship integration direction. Other projects and restricted pilots should **not** be treated as installed AGOT features.
 
-[Roadmap](../ROADMAP.md) · [Capabilities](CAPABILITY_MATRIX.md) · [Public release](https://github.com/aerocorp13/AGOT-Releases/releases/latest).
+[Roadmap](../ROADMAP.md) · [Capabilities](CAPABILITY_MATRIX.md) · [Public release](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3).

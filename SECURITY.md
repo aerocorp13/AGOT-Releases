@@ -6,7 +6,7 @@ Include the exact affected product version/tag, Windows version, expected vs obs
 
 ## Current distribution and supported channels
 
-AGOT Desktop has published **Preview 1 (1.0.0), Preview 2 (1.0.1) and Preview 3 (1.0.2)** Windows MSI assets; all are **pre-release evaluation builds**. Publication does not imply a security certification, defined support SLA or a guarantee that older previews will receive fixes. The [latest published release](https://github.com/aerocorp13/AGOT-Releases/releases/latest) and its limitations determine what is being distributed now.
+AGOT Desktop has published **Preview 1 (1.0.0), Preview 2 (1.0.1) and Preview 3 (1.0.2)** Windows MSI assets; all are **pre-release evaluation builds**. Publication does not imply a security certification, defined support SLA or a guarantee that older previews will receive fixes. The [latest published release](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) and its limitations determine what is being distributed now.
 
 Download only through this repository's [GitHub Releases](https://github.com/aerocorp13/AGOT-Releases/releases) or [GeoTwins Africa](https://geotwins.org/download/). Compare the asset's GitHub SHA-256 digest where available; check the actual signing status separately. A matching hash is not equivalent to code signing or proof that a binary is safe.
 
