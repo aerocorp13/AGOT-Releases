@@ -5,11 +5,11 @@
 
 AGOT brings professional geospatial workflows, versioned operational worlds, human-reviewed GeoAI tools, 2D/3D visualization and emerging scenario simulation into one Windows desktop workspace. Our initial focus is **climate-resilient infrastructure and urban planning in data-scarce African contexts**; the architecture is not limited to Africa.
 
-> **Public preview — not a stable production release.** Published capabilities are unevenly mature. Real data, licensing and professional decisions remain the user's responsibility. The latest public installer is **AGOT Desktop 1.0.2 / Preview 3**, published 2 November 2026 (UTC).
+> **Public preview — not a stable production release.** Published capabilities are unevenly mature. Real data, licensing and professional decisions remain the user's responsibility. Preview 3 (1.0.2) was published 2 November 2026. A newer experimental 1.0.4 MSI and QGIS/ArcGIS GeoAI host packages are documented separately; check GitHub Releases for their actual current public status.
 
-[**Download latest public release**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) · [**Download Preview 3 directly**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
+[**Browse all published releases**](https://github.com/aerocorp13/AGOT-Releases/releases) · [**Download Preview 3 directly**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
 
-## Current downloadable build
+## Historical published baseline — Preview 3
 
 | Item | Verified publication |
 | --- | --- |
@@ -35,7 +35,15 @@ The hash above is the **GitHub release asset digest**, not evidence of a code-si
 
 **Important:** Availability is not the same as end-to-end validation. Exact workflow support depends on configuration, compatible data and the installed engines. Details are in [Capabilities and evidence](docs/CAPABILITY_MATRIX.md) and [Known limits](docs/QUALITY_AND_LIMITATIONS.md).
 
-## Five-minute evaluation
+## Experimental 1.0.4 and GeoAI host previews
+
+- **[Desktop 1.0.4 experimental MSI](docs/previews/AGOT_DESKTOP_1.0.4_PREVIEW_1.md)** · [Release page](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.4-preview.1): unsigned at inspection, manual evaluation only; not a verified Tauri automatic update.
+- **[QGIS GeoAI plugin](docs/previews/QGIS_GEOAI_0.1.0.md)** · **[ArcGIS Pro Python toolbox](docs/previews/ARCGIS_PRO_PYTHON_GEOAI_0.1.0.md)** · **[native Esri add-in](docs/previews/ARCGIS_PRO_NATIVE_GEOAI_0.1.0.md)** · [GIS host release](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.1.0-preview.1).
+- **[Shared host SDK](docs/previews/GEOAI_HOST_SDK_0.1.0.md)** · **[Release channels](docs/previews/CHANNELS_AND_RELEASE_NOTES.md)** · **[Next-day acceptance checklist](docs/previews/PREVIEW_ACCEPTANCE_20261105.md)** · [Plugins portal](https://geotwins.org/plugins/).
+
+All current packages are **experimental**. Native installed-host, clean upgrade and backend acceptance have not been demonstrated by the release uploads. The QGIS ZIP includes a **restrictive evaluation-only license**, which does not authorize downstream redistribution or official marketplace submission. The experimental desktop and host packages are separately tagged and must not replace a stable signed updater feed. Check each release page to establish whether it has been published.
+
+## Five-minute evaluation of historical Preview 3
 
 1. Open the [Preview 3 release](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) and download the named MSI from **Assets**.
 2. Verify the downloaded file against the SHA-256 above; follow [installation and upgrade guidance](docs/INSTALLATION.md).

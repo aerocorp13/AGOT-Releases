@@ -4,11 +4,16 @@ This page describes **published Windows installers**, not all code present in AG
 
 | Channel | Publication | Product version | GitHub tag | Published MSI |
 | --- | --- | --- | --- | --- |
-| **Preview 3 (current)** | **2 Nov 2026** | **1.0.2** | [`v1.0.1-preview.3`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) | `AGOT.Desktop_1.0.2_x64_en-US.msi` |
+| **1.0.4 experimental preview** | Check release for publication | 1.0.4 | [v1.0.4-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.4-preview.1) | AGOT.Desktop_1.0.4_x64_en-US.msi, manual evaluation only |
+| **Preview 3 (prior public baseline)** | **2 Nov 2026** | **1.0.2** | [`v1.0.1-preview.3`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) | `AGOT.Desktop_1.0.2_x64_en-US.msi` |
 | Preview 2 | 1 Nov 2026 | 1.0.1 | [`v1.0.1-preview.2`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.2) | `AGOT.Desktop_1.0.1_x64_en-US.msi` |
 | Preview 1 | 29 Oct 2026 | 1.0.0 | [`v1.0.0-preview.1`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.0-preview.1) | `AGOT.Desktop_1.0.0_x64_en-US.msi` |
 
 **Naming note:** Preview 3’s tag is `v1.0.1-preview.3`, but the published release and MSI identify the **application and Windows Installer version as 1.0.2**. This historical discrepancy is recorded rather than silently relabeled.
+
+## Experimental 1.0.4 Windows and GeoAI host 0.1.0 previews
+
+The newer **AGOT Desktop 1.0.4 manual MSI** and the separate **QGIS / ArcGIS Pro GeoAI 0.1.0 host packages** have individual experimental guides: [Desktop MSI](docs/previews/AGOT_DESKTOP_1.0.4_PREVIEW_1.md), [QGIS](docs/previews/QGIS_GEOAI_0.1.0.md), [ArcGIS Python](docs/previews/ARCGIS_PRO_PYTHON_GEOAI_0.1.0.md), [ArcGIS native](docs/previews/ARCGIS_PRO_NATIVE_GEOAI_0.1.0.md), [Host SDK](docs/previews/GEOAI_HOST_SDK_0.1.0.md), [Acceptance matrix](docs/previews/PREVIEW_ACCEPTANCE_20261105.md). Verify publication status on GitHub. These do not include verified stable Tauri update artifacts.
 
 ## Preview 3 — AGOT Desktop 1.0.2
 

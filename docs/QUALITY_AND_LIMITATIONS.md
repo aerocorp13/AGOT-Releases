@@ -2,6 +2,10 @@
 
 **AGOT is a public preview, not a certified professional GIS, civil-engineering or scientific prediction service.** The presence of a feature in code, release notes or a synthetic test does not by itself establish that every configuration will work.
 
+## Additional experimental previews
+
+Desktop 1.0.4 and GeoAI host 0.1.0 have uploaded artifacts and SHA-256 evidence; release publication is separate from tested installed functionality. Full Windows upgrade, source-to-MSI provenance, native QGIS/Esri host behavior and PostGIS/GPU acceptance remain unverified. QGIS's embedded evaluation-only notice does not authorize downstream redistribution. See [preview acceptance](previews/PREVIEW_ACCEPTANCE_20261105.md).
+
 ## Evidence already public
 
 - Three public Windows preview MSI assets have been published since 29 October 2026.

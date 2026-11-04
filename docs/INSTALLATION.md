@@ -1,5 +1,7 @@
 # Install, verify and evaluate AGOT Desktop
 
+**Using the newer experimental 1.0.4 MSI?** Read [Preview 1.0.4 installation and limitations](previews/AGOT_DESKTOP_1.0.4_PREVIEW_1.md) and [next-day acceptance](previews/PREVIEW_ACCEPTANCE_20261105.md). The following 1.0.2 hash and instructions are for historical Preview 3 only.
+
 These instructions are for **AGOT Desktop 1.0.2 — Public Preview 3** on Windows x64. It is a pre-release evaluation build; back up important data and prefer a non-critical computer or test environment.
 
 ## 1. Download the real asset

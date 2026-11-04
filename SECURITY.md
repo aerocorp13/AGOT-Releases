@@ -10,6 +10,10 @@ AGOT Desktop has published **Preview 1 (1.0.0), Preview 2 (1.0.1) and Preview 3 
 
 Download only through this repository's [GitHub Releases](https://github.com/aerocorp13/AGOT-Releases/releases) or [GeoTwins Africa](https://geotwins.org/agot/). Compare the asset's GitHub SHA-256 digest where available; check the actual signing status separately. A matching hash is not equivalent to code signing or proof that a binary is safe.
 
+## Experimental 1.0.4 and GIS-host caveats
+
+The 1.0.4 MSI was reported as **NotSigned** at packaging and is not a certified automatic updater. Experimental QGIS/ArcGIS packages require a working local AGOT service, authorization, explicit operator approval and licensed source rights. Never record AGOT_HOST_TOKEN or QGIS session bearers in GIS project histories, screenshots or public issue reports. See [preview acceptance](docs/previews/PREVIEW_ACCEPTANCE_20261105.md).
+
 ## High-impact areas
 
 Please report unsafe cross-user/tenant data access, historical World source permission bypass, unauthorized side-effect execution, private model credential disclosure, forged/replayed action receipts, insecure updates/installers, malicious plugins or unsafe external data fetches.
