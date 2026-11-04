@@ -43,6 +43,30 @@ The hash above is the **GitHub release asset digest**, not evidence of a code-si
 4. Start with a simple GIS map or layer workflow. Advanced Worlds, GeoAI, simulation and 3D work require supported sources and service configuration.
 5. Report problems with the exact version, Windows build, feature, steps and sanitized error text.
 
+## GeoAI host extensions — under native validation
+
+GeoTwins is preparing three independent GIS host integration packages: a QGIS
+Python plugin, an ArcGIS Pro Python toolbox and a native ArcGIS Pro .NET add-in.
+These connect to a compatible installed AGOT service and are **not** substitutes
+for AGOT Desktop. Their initial local Windows builds are not verified to
+operate correctly inside installed QGIS or licensed ArcGIS Pro yet, so no
+public extension download is claimed here.
+
+After licensing review, real installed-host testing, source reproducibility
+and owner approval, experimental host packages may be attached to a
+**separate GitHub prerelease in this same repository**, using a tag such as
+geoai-hosts-v0.1.0-preview.1. These prereleases must NOT be marked Latest:
+the stable latest release and latest.json endpoint are reserved for the
+signed AGOT Desktop updater. Never include private source trees, model
+credentials or user geospatial datasets in the public assets.
+
+The planned public website section is
+[GeoAI GIS host extensions](https://geotwins.org/download/#gis-host-plugins).
+It will offer the three real packages only after a complete approved public
+prerelease exists with valid GitHub SHA-256 metadata. Historical public
+AGOT Desktop Preview 3 continues to be the current downloadable desktop
+while v1.0.4 acceptance and native update testing proceed.
+
 ## What is next?
 
 Our direction is an **interoperable multi-world digital-twin operating system**: maintain an authoritative Operational World; fork scenario worlds; compare land use, infrastructure, urban growth, water stress and climate exposure; and use tool-grounded GeoAI to propose reproducible, reviewable GIS actions.
