@@ -1,10 +1,10 @@
-<!-- Source specification only. No MSI, add-in or public 1.0.5/0.3.0 release has yet been uploaded by this docs commit. -->
+<!-- Historical specification preserved for source comparison; native Windows MSI has been built. -->
 
-**STATUS: SOURCE IMPLEMENTED, BINARIES NOT YET PUBLISHED.** The Windows owner build and real GIS host acceptance are required before the tags/downloads can go live.
+**STATUS AS OF 5 NOVEMBER 2026: MSI BUILT, PUBLIC BINARY UPLOAD NOT COMPLETE.** The actual 1.0.5 MSI (1,408,242,136 bytes) was produced by Windows native compilation. The `v1.0.5-preview.1` GitHub record is still an unpublished draft with zero binary assets at inspection. See the [actual build's detailed notes](AGOT_DESKTOP_1.0.5_PREVIEW_1.md), [candidate hashes](PREVIEW_CANDIDATE_ASSETS_1.0.5_0.3.0.json) and [publication checklist](RELEASE_1.0.5_0.3.0_PUBLICATION_CHECKLIST.md). Neither this document nor an empty draft is a download link.
 
 # AGOT Desktop 1.0.5 — Preview 1 full-stack integration change notes
 
-**Planned public GitHub prerelease:** v1.0.5-preview.1 (or next available numbered preview at publishing). Source metadata targets AGOT Desktop **1.0.5**, Windows x64; this document does not claim a new MSI has already been built or published.
+**Planned public GitHub prerelease:** v1.0.5-preview.1 (or next available numbered preview at publishing). Source metadata targets AGOT Desktop **1.0.5**, Windows x64; this document records earlier source plans; the native MSI is now built, but publication remains pending.
 
 ## Main integrated code changes
 
