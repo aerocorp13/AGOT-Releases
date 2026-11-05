@@ -1,47 +1,35 @@
-<!-- Source specification only. No MSI, add-in or public 1.0.5/0.3.0 release has yet been uploaded by this docs commit. -->
+# Owner release and recovery guide — Desktop 1.0.5 / GIS Hosts and Python SDK 0.3.0
 
-**STATUS: SOURCE IMPLEMENTED, BINARIES NOT YET PUBLISHED.** The Windows owner build and real GIS host acceptance are required before the tags/downloads can go live.
+**As verified 5 November 2026:** both `v1.0.5-preview.1` and `geoai-hosts-v0.3.0-preview.1` exist as draft records with **zero uploaded assets**. The native Windows build is complete, including a 1,408,242,136-byte MSI. The upload stage—not the compiler—failed; a full rebuild is unnecessary if both original build manifests and hashes still agree.
 
-# Owner release procedure — AGOT Desktop 1.0.5 + standalone GIS SDK 0.3.0
+## Resume the existing native build and publish
 
-## One command: full Windows build and public experimental prereleases
+From Windows PowerShell 7 in `C:\Users\GKMA\Downloads\Apps\world-twin-agents`:
 
-From the PR #21 checkout on the Windows 11 workstation:
+```powershell
+git pull --ff-only origin ui/premium-glass-workstation-20261030
+node --test tests/release-publication-contract.test.mjs
+.\.venv\Scripts\python.exe -m pytest -q tests/unit/test_preview_release_pipeline.py
+pwsh -NoProfile -File .\scripts\releases\build-and-publish-previews.ps1 -Publish -PublishExisting
+```
 
-1. Close AGOT, ArcGIS Pro and QGIS so binaries and Python plugin files are not locked.
-2. Install Visual Studio 2026 / .NET SDK 10; keep licensed ArcGIS Pro 3.7, QGIS 3.44, Python 3.12, Rust, Node 22, WebView2 and the canonical AGOT desktop/PostGIS build prerequisites available.
-3. Authenticate GitHub CLI using gh auth login. The account needs write permission to the **aerocorp13/AGOT-Releases** repository (both Contents and Releases).
-4. Ensure your branch has no uncommitted changes and pull the latest source:
+The script compares `host-v2-build-report.json` and `host-plugin-build.json` against the six original native binaries and original compiled commit `64452231cabee5d1e6b6124923c25d1b2d5ebea9`, rechecks MSI ProductVersion 1.0.5, and verifies that subsequent source changes were limited to release tooling and generated ArcGIS bin/obj outputs. It refuses reuse after any other application code changes.
 
-    git checkout ui/premium-glass-workstation-20261030
-    git pull --ff-only origin ui/premium-glass-workstation-20261030
+For each existing draft, Python coordinates a numeric GitHub release ID; `scripts/releases/upload-preview-asset.ps1` uses authenticated PowerShell `Invoke-RestMethod -InFile` for the large MSI and other binary files. It resumes matching uploaded files but never deletes or overwrites mismatches. Every remote asset must report the expected size, upload state and SHA-256 digest, including `release-evidence.json` and `SHA256SUMS.txt`.
 
-5. Build everything locally first, without publication:
+**Only after all remote files verify:** both GitHub releases are changed to `draft=false`, `prerelease=true`, `make_latest=false`; their public links are verified and the README, changelog, release notes and detailed preview Markdown are synchronized to the public repository. No stable signed updater is implied.
 
-    pwsh -NoProfile -File .\scripts\releases\build-and-publish-previews.ps1
+If an upload fails, the drafts remain intact. Inspect the PowerShell HTTP error and retry the same resumable command rather than rebuilding or promoting empty releases.
 
-6. Publish both **complete PUBLIC GitHub experimental PRERELEASES**, with real MSI, Esri add-in, both GIS host ZIPs and SDK wheel/source ZIP:
+## Build outputs and publication evidence
 
-    pwsh -NoProfile -File .\scripts\releases\build-and-publish-previews.ps1 -Publish
+- `build/geoai-host-v2/` — authentic Esri add-in, ArcGIS/QGIS ZIPs, SDK source ZIP and wheel, build reports.
+- `apps/desktop/src-tauri/target/release/bundle/msi/AGOT Desktop_1.0.5_x64_en-US.msi` — original compiled Windows x64 installer.
+- `build/public-preview-publish/staged-assets/` — renamed, hash-checked copies for GitHub.
+- `build/public-preview-publish/generated-notes/` — generated Desktop/Hosts release notes and source evidence.
+- `build/public-preview-publish/public-preview-publisher-report.json` and `windows-preview-build-report.json` — final status and failure details.
 
-The publisher runs npm typechecks/tests, host SDK tests and the existing canonical Windows runtime + MSI build. It refuses a dirty or stale source SHA, mismatched ProductVersion or package version, missing or stale artifact, failed test, bad .NET 10 add-in, failed upload or mismatched GitHub asset inventory. An existing release tag is never overwritten. The publisher first stages complete uploads as temporary drafts, checks them, updates AGOT-Releases Markdown and finally publishes as **isDraft=false, isPrerelease=true**. On failure it attempts to clean up ONLY new drafts from its own invocation. Neither release is marked stable.
-
-If the source baseline origin/main is absent, fetch origin/main first. Detailed generated notes use the exact source commit and all local built artifact hashes.
-
-## What the publisher produces
-
-Build: build/geoai-host-v2, with full native host binaries, companion, SDK and optional matching AGOT MSI.
-
-Staged local artifacts and generated release notes:
-- build/public-preview-publish/staged-assets/desktop/
-- build/public-preview-publish/staged-assets/hosts/
-- build/public-preview-publish/generated-notes/desktop-notes.md
-- build/public-preview-publish/generated-notes/hosts-notes.md
-- build/public-preview-publish/generated-notes/release-evidence.json
-- build/public-preview-publish/public-preview-publisher-report.json
-- build/public-preview-publish/windows-preview-build-report.json
-
-Each release has SHA256SUMS.txt, release-evidence.json, detailed Markdown and real binary files. The cloned AGOT-Releases main branch receives docs/previews/AGOT_DESKTOP_1.0.5_PREVIEW_N.md and GEOAI_HOSTS_0.3.0_PREVIEW_N.md, updated README, CHANGELOG, RELEASE_NOTES and channel notes. Historical published releases are retained.
+[Complete files and SHA-256](PREVIEW_CANDIDATE_ASSETS_1.0.5_0.3.0.json) · [Publication checklist](RELEASE_1.0.5_0.3.0_PUBLICATION_CHECKLIST.md).
 
 ## Install and test without AGOT Desktop
 

@@ -1,0 +1,50 @@
+{
+  "schema": "geotwins.preview-candidate-assets/1",
+  "source": "GitHub draft notes prepared by Windows native build",
+  "source_commit": "64452231cabee5d1e6b6124923c25d1b2d5ebea9",
+  "record_date_utc": "2026-11-05",
+  "publication_state": "unpublished_drafts_zero_assets",
+  "expected_binary_artifacts": [
+    {
+      "tag": "v1.0.5-preview.1",
+      "name": "AGOT.Desktop_1.0.5_x64_en-US.msi",
+      "bytes": 1408242136,
+      "sha256": "4c84b5f682cd709996ae6fb8edde07890e9118271816755f1e8ee57b5de251de"
+    },
+    {
+      "tag": "geoai-hosts-v0.3.0-preview.1",
+      "name": "GeoTwins.GeoAI.ArcGISPro.esriAddInX",
+      "bytes": 42513,
+      "sha256": "c57975f487100fea2b9c0710f0fbaa81534861aba460b31f3d9563155db6be88"
+    },
+    {
+      "tag": "geoai-hosts-v0.3.0-preview.1",
+      "name": "geotwins_geoai_arcgis_pro_0.3.0.zip",
+      "bytes": 24386,
+      "sha256": "c227933559c23c2f4cdc8ab52deac62966d286d4a3a77c6b8fe83488752d694a"
+    },
+    {
+      "tag": "geoai-hosts-v0.3.0-preview.1",
+      "name": "geotwins_geoai_qgis_0.3.0.zip",
+      "bytes": 29877,
+      "sha256": "9400211b0de85d94a1afadeaa9de6e6dd1c092cc9f7a1d37c21644bdcbdda8d2"
+    },
+    {
+      "tag": "geoai-hosts-v0.3.0-preview.1",
+      "name": "geotwins_geoai_python_sdk_0.3.0.zip",
+      "bytes": 13863,
+      "sha256": "f3ea5469f5118595a7e0c570cba9547558eed0c26544c3adcb2d6d1edcecd6fb"
+    },
+    {
+      "tag": "geoai-hosts-v0.3.0-preview.1",
+      "name": "geotwins_geoai_sdk-0.3.0-py3-none-any.whl",
+      "bytes": 14109,
+      "sha256": "bd6b5370c62806181a6b8427d8cb1b162314cc7c8eb1c8581929bcd4d3c25c06"
+    }
+  ],
+  "public_asset_digest_verified": false,
+  "real_arcgis_qgis_host_acceptance": "not_claimed",
+  "windows_install_upgrade_acceptance": "not_claimed",
+  "stable_updater_signing": "not_claimed",
+  "notice": "Candidate checksums are copied from draft build evidence. They are NOT independently verified as GitHub release asset digests until publication."
+}

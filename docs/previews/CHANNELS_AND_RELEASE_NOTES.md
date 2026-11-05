@@ -1,4 +1,15 @@
-# AGOT 1.0.4 and GeoAI host 0.1.0 — experimental release channels
+# Experimental AGOT distribution channels — 5 November 2026
+
+**Source-built, not yet public:** Desktop 1.0.5 and GIS Hosts / SDK 0.3.0 were compiled, but their new GitHub release records were **drafts with zero uploaded assets** at the 5 November inspection. Do not advertise them as downloadable until every binary and checksum is verified and both drafts become public prereleases.
+
+| New candidate | GitHub tag | Status at inspection | Required deliverables |
+| --- | --- | --- | --- |
+| AGOT Desktop 1.0.5 | `v1.0.5-preview.1` | Draft; zero assets | 1.0.5 MSI, evidence JSON, SHA256SUMS |
+| GIS Hosts / SDK 0.3.0 | `geoai-hosts-v0.3.0-preview.1` | Draft; zero assets | native .esriAddInX, ArcGIS toolbox ZIP, QGIS ZIP, SDK source ZIP, SDK wheel, evidence JSON, SHA256SUMS |
+
+[Desktop 1.0.5 notes](AGOT_DESKTOP_1.0.5_PREVIEW_1.md) · [Hosts/SDK 0.3.0 notes](GEOAI_HOSTS_0.3.0_PREVIEW_1.md) · [Release checklist](RELEASE_1.0.5_0.3.0_PUBLICATION_CHECKLIST.md).
+
+The older 1.0.4 / 0.1.0 prereleases below remain publicly available. No preview is a signed stable automatic-update feed.
 
 ## Separate release channels
 | Channel | GitHub tag | Assets | Promotion rule |
