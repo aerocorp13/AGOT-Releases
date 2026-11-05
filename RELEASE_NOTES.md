@@ -4,7 +4,7 @@ This page describes **published Windows installers**, not all code present in AG
 
 | Channel | Publication | Product version | GitHub tag | Published MSI |
 | --- | --- | --- | --- | --- |
-| **1.0.5 candidate — draft** | Not publicly downloadable at 5 Nov check | 1.0.5 | `v1.0.5-preview.1` (draft record) | `AGOT.Desktop_1.0.5_x64_en-US.msi` built, not yet uploaded |
+| **1.0.5 experimental public preview** | **5 Nov 2026, 16:51 UTC** | **1.0.5** | [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) | `AGOT.Desktop_1.0.5_x64_en-US.msi` · 1,408,242,136 bytes · SHA-256 verified |
 | **1.0.4 experimental preview** | Check release for publication | 1.0.4 | [v1.0.4-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.4-preview.1) | AGOT.Desktop_1.0.4_x64_en-US.msi, manual evaluation only |
 | **Preview 3 (prior public baseline)** | **2 Nov 2026** | **1.0.2** | [`v1.0.1-preview.3`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) | `AGOT.Desktop_1.0.2_x64_en-US.msi` |
 | Preview 2 | 1 Nov 2026 | 1.0.1 | [`v1.0.1-preview.2`](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.2) | `AGOT.Desktop_1.0.1_x64_en-US.msi` |
@@ -12,16 +12,17 @@ This page describes **published Windows installers**, not all code present in AG
 
 **Naming note:** Preview 3’s tag is `v1.0.1-preview.3`, but the published release and MSI identify the **application and Windows Installer version as 1.0.2**. This historical discrepancy is recorded rather than silently relabeled.
 
-## Desktop 1.0.5 and standalone GIS Hosts / SDK 0.3.0 — built candidates
+## Desktop 1.0.5 and GIS Hosts / SDK 0.3.0 — public experimental prereleases
 
-Both new release records were still **drafts with zero uploaded assets** when inspected on 5 November 2026. The native Windows build had completed, but the large MSI upload failed. Do not infer working download links or publication from this documentation.
+**Published on 5 November 2026, verified from GitHub's actual release assets.** The 1.0.5 Windows MSI (1,408,242,136 bytes) and all five GIS-host/independent Python SDK binaries are uploaded, non-draft prereleases. GitHub reports exact file sizes, uploaded states and SHA-256 digests; separate `SHA256SUMS.txt` and `release-evidence.json` files accompany each release.
 
-- [AGOT Desktop 1.0.5 Preview 1 release/build notes](docs/previews/AGOT_DESKTOP_1.0.5_PREVIEW_1.md)
-- [QGIS, ArcGIS Pro and Python SDK 0.3.0 Preview 1 notes](docs/previews/GEOAI_HOSTS_0.3.0_PREVIEW_1.md)
-- [Actual candidate asset filenames, lengths, SHA-256](docs/previews/PREVIEW_CANDIDATE_ASSETS_1.0.5_0.3.0.json)
-- [Publication and real-host validation checklist](docs/previews/RELEASE_1.0.5_0.3.0_PUBLICATION_CHECKLIST.md)
+- [Download Windows AGOT Desktop 1.0.5](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) · [Detailed release notes](docs/previews/AGOT_DESKTOP_1.0.5_PREVIEW_1.md)
+- [Download QGIS, ArcGIS Pro and Python SDK 0.3.0 packages](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1) · [Detailed host notes](docs/previews/GEOAI_HOSTS_0.3.0_PREVIEW_1.md)
+- [Verified candidate-to-public asset inventory and digests](docs/previews/PREVIEW_CANDIDATE_ASSETS_1.0.5_0.3.0.json)
+- [Publication evidence and installed-host acceptance checklist](docs/previews/RELEASE_1.0.5_0.3.0_PUBLICATION_CHECKLIST.md)
+- [2027 Linux/macOS development targets](ROADMAP.md)
 
-**Compiled source SHA:** `64452231cabee5d1e6b6124923c25d1b2d5ebea9`. The 1.0.5 installer was **1,408,242,136 bytes**. Five separate GIS host and SDK binaries were prepared. Publication still requires verified GitHub remote SHA-256 digests, public prerelease status, and separate field acceptance; no signed Tauri updater is claimed.
+**Original compiled source SHA:** `64452231cabee5d1e6b6124923c25d1b2d5ebea9`. The Windows MSI is unsigned at the recorded inspection and neither preview guarantees clean upgrades, licensed Esri/QGIS execution, reliable model inference, certified scientific results or signed Tauri automatic updates. These are published experimental packages, not stable production acceptance.
 
 ## Experimental 1.0.4 Windows and GeoAI host 0.1.0 previews
 

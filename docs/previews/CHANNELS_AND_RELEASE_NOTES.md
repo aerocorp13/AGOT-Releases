@@ -1,15 +1,20 @@
-# Experimental AGOT distribution channels — 5 November 2026
+# GeoTwins public distribution channels — 5 November 2026
 
-**Source-built, not yet public:** Desktop 1.0.5 and GIS Hosts / SDK 0.3.0 were compiled, but their new GitHub release records were **drafts with zero uploaded assets** at the 5 November inspection. Do not advertise them as downloadable until every binary and checksum is verified and both drafts become public prereleases.
+The previously prepared Windows and GIS host drafts have now been uploaded and promoted. **Both 1.0.5 and 0.3.0 are public experimental prereleases**, with exact GitHub-reported SHA-256 digests and separate release-evidence.json files. This does not certify automatic installation, plugin marketplace approval or all real GIS/model functionality.
 
-| New candidate | GitHub tag | Status at inspection | Required deliverables |
+| Channel | GitHub release | Public assets | Status |
 | --- | --- | --- | --- |
-| AGOT Desktop 1.0.5 | `v1.0.5-preview.1` | Draft; zero assets | 1.0.5 MSI, evidence JSON, SHA256SUMS |
-| GIS Hosts / SDK 0.3.0 | `geoai-hosts-v0.3.0-preview.1` | Draft; zero assets | native .esriAddInX, ArcGIS toolbox ZIP, QGIS ZIP, SDK source ZIP, SDK wheel, evidence JSON, SHA256SUMS |
+| AGOT Windows Desktop 1.0.5 | [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) | 1 MSI, 1 evidence JSON, 1 SHA256SUMS | **Public prerelease · not stable** |
+| GIS Hosts / Python SDK 0.3.0 | [geoai-hosts-v0.3.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1) | 5 native/SDK packages, 1 evidence JSON, 1 SHA256SUMS | **Public prerelease · not stable** |
+| Linux desktop AppImage/DEB | 2027 target | None | **Coming soon · not released** |
+| macOS ARM64/Intel app/DMG | 2027 target | None | **Coming soon · not released** |
+| Signed Tauri automatic updates | Not yet accepted | No signed update manifest | **Not enabled for this experimental channel** |
 
-[Desktop 1.0.5 notes](AGOT_DESKTOP_1.0.5_PREVIEW_1.md) · [Hosts/SDK 0.3.0 notes](GEOAI_HOSTS_0.3.0_PREVIEW_1.md) · [Release checklist](RELEASE_1.0.5_0.3.0_PUBLICATION_CHECKLIST.md).
+[Desktop release notes](AGOT_DESKTOP_1.0.5_PREVIEW_1.md) · [Hosts/SDK documentation](GEOAI_HOSTS_0.3.0_PREVIEW_1.md) · [Current public roadmap](../../ROADMAP.md).
 
-The older 1.0.4 / 0.1.0 prereleases below remain publicly available. No preview is a signed stable automatic-update feed.
+The GeoTwins website dynamically checks public GitHub asset metadata: Desktop MSI on `/agot/`, five host/SDK packages on `/plugins/` and `/sdks/`. **Website listing refresh is not silent in-host or installed desktop update delivery.** Human-reviewed native GIS execution, platform signing, QGIS licensing and native install test ledgers remain separate.
+
+## Historical 1.0.4 and 0.1.0 prerelease baseline
 
 ## Separate release channels
 | Channel | GitHub tag | Assets | Promotion rule |
@@ -25,7 +30,7 @@ The older 1.0.4 / 0.1.0 prereleases below remain publicly available. No preview 
 A public GitHub Release exposes voluntary experiment downloads, not a supported general-release entitlement, automatic updater, accepted plugin marketplace listing or signed scientific result.
 
 ## Website
-GeoTwins Africa's public download routes dynamically discover approved published assets. https://geotwins.org/agot/ handles eligible desktop MSI releases; https://geotwins.org/plugins/#packages requires a complete published GIS host prerelease with exact three filenames and verified GitHub digests. Drafts never count as public assets.
+GeoTwins Africa's public download routes dynamically discover approved published assets. https://geotwins.org/agot/ handles eligible desktop MSI releases; https://geotwins.org/plugins/#packages requires a complete published GIS-host prerelease; 0.3.0+ includes five exact version-matched filenames and verified GitHub digests. Drafts never count as public assets.
 
 ## Guide index
 - [AGOT Desktop installation and known limits](AGOT_DESKTOP_1.0.4_PREVIEW_1.md)

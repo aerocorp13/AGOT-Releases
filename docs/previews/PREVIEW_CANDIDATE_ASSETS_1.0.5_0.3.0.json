@@ -3,7 +3,7 @@
   "source": "GitHub draft notes prepared by Windows native build",
   "source_commit": "64452231cabee5d1e6b6124923c25d1b2d5ebea9",
   "record_date_utc": "2026-11-05",
-  "publication_state": "unpublished_drafts_zero_assets",
+  "publication_state": "published_public_experimental_prereleases_verified",
   "expected_binary_artifacts": [
     {
       "tag": "v1.0.5-preview.1",
@@ -42,9 +42,28 @@
       "sha256": "bd6b5370c62806181a6b8427d8cb1b162314cc7c8eb1c8581929bcd4d3c25c06"
     }
   ],
-  "public_asset_digest_verified": false,
+  "public_asset_digest_verified": true,
   "real_arcgis_qgis_host_acceptance": "not_claimed",
   "windows_install_upgrade_acceptance": "not_claimed",
   "stable_updater_signing": "not_claimed",
-  "notice": "Candidate checksums are copied from draft build evidence. They are NOT independently verified as GitHub release asset digests until publication."
+  "notice": "All six candidate binary assets match actual uploaded GitHub name, size, state and SHA-256. This does not certify native installed-host behavior, Windows clean upgrades, code signing or models.",
+  "publication_verified_utc": "2026-11-05",
+  "verified_release_tags": [
+    {
+      "tag": "v1.0.5-preview.1",
+      "published_at": "2026-11-05T16:51:36Z",
+      "draft": false,
+      "prerelease": true,
+      "binary_and_evidence_asset_count": 3,
+      "url": "https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1"
+    },
+    {
+      "tag": "geoai-hosts-v0.3.0-preview.1",
+      "published_at": "2026-11-05T16:51:44Z",
+      "draft": false,
+      "prerelease": true,
+      "binary_and_evidence_asset_count": 7,
+      "url": "https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1"
+    }
+  ]
 }

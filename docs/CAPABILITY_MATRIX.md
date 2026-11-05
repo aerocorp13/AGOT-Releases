@@ -1,6 +1,21 @@
 # Capabilities — release evidence matrix
 
-**As of 3 November 2026.** “Documented in Preview 3” means described in its published notes; it does **not** certify all workflows on an independent clean Windows machine.
+**Updated 5 November 2026.** AGOT 1.0.5 and GIS Host/SDK 0.3.0 are publicly available experimental prereleases, with verified GitHub binary assets and checksums. “Release-documented” and “source-implemented” do **not** certify all workflows on independent clean Windows machines or licensed GIS hosts.
+
+## Latest experimental public preview matrix
+
+| Capability | Published evidence | Remaining acceptance |
+| --- | --- | --- |
+| Windows AGOT 1.0.5 | MSI `v1.0.5-preview.1`, 1,408,242,136 bytes and SHA-256 | Clean installation/upgrade from 1.0.4, backend recovery, data restore and signed updater |
+| Concept 6 desktop workspaces | Windows MSI/source integration line, typecheck and native build evidence | High-DPI, all GIS modules on real installed data and robust keyboard accessibility |
+| GeoAI agent/workflow harness | Model capability policy and actual native tool-call readiness gating; reviewed GIS operations and saved receipts | Live model matrix, long-run job recovery, authorized workflow replay and no fabricated outputs |
+| Worlds, Twin, Simulation and 3D | Versioned source/World/scene contracts and native runtime pathways in 1.0.5 line | City-scale tiles, CRS/vertical accuracy, real IFC/point clouds, calibrated scenarios and linked temporal worlds |
+| QGIS and ArcGIS Pro GeoAI 0.3.0 | QGIS ZIP, ArcGIS Python toolbox ZIP and native .NET 10 .esriAddInX released with SHA-256 | Installed QGIS/ArcGIS Pro tests, licensing and vendor marketplace decisions |
+| Standalone Python SDK 0.3.0 | Python wheel and portable source ZIP publicly released | Real host/model interoperability and Python dependency boundary validation |
+| Website package refresh | Dynamic public GitHub release metadata, exact version, SHA-256 and asset URL | Website redeployment for the new UI; **not** automatic installed QGIS/ArcGIS upgrades |
+| Linux/macOS desktop | Development/readiness scripts and 2027 roadmap only | Native runtime port, Linux/macOS builds, signing and independent installed acceptance |
+
+Historical Preview 3 information follows for provenance.
 
 | Capability | Public Preview 3 evidence | Practical boundary |
 | --- | --- | --- |

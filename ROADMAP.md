@@ -4,9 +4,13 @@
 
 This roadmap is a **prioritized engineering plan**, not a delivery commitment. No feature below is promised for a specific date, funded pilot or release unless explicitly recorded as published.
 
-## Current public baseline — Preview 3 (1.0.2)
+## Current public experimental baseline — 5 November 2026
 
-Published release notes identify Windows desktop packaging, source-aware maps and GIS services, versioned World reads/forks/corrections, approved revisioned GIS steps, durable GeoAI plans and ONNX job provenance. See [release notes](RELEASE_NOTES.md) and [capability matrix](docs/CAPABILITY_MATRIX.md). These features still have workflow-specific limitations.
+- **AGOT Desktop Windows 1.0.5:** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1), an actual 1,408,242,136-byte Windows x64 MSI with uploaded SHA-256 and source provenance. Concept 6 professional GIS workstation, source-backed Worlds and specialist modules, GIS jobs, experimental Twin/Simulation/GeoAI and developing large-scale 3D. This is **published**, not production-certified; clean Windows install and upgrade are separate gates.
+- **GeoAI Hosts and standalone Python SDK 0.3.0:** [geoai-hosts-v0.3.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1), five real binaries: ArcGIS Pro .NET 10 add-in, ArcGIS Python toolbox ZIP, QGIS plugin ZIP, independent Python SDK source ZIP and wheel, plus hashes/evidence. Standalone native host GIS and reviewed local Ollama workflows are distinct from optional connected AGOT mode. Installed Esri/QGIS and model acceptance remain separate.
+- **Older Preview 3 (1.0.2):** historical release. These newer public previews supersede it as the latest download choices, but do not imply every source capability is tested in production.
+
+See [release notes](RELEASE_NOTES.md) and [capability matrix](docs/CAPABILITY_MATRIX.md) for specific boundaries.
 
 ## Release gates before broad production claims
 
@@ -20,6 +24,19 @@ Published release notes identify Windows desktop packaging, source-aware maps an
 | **P1** | **Spatial 3D interoperability** | Verified terrain/vertical-datum handling and bounded map/Three/Cesium rendering; explicit 3D Tiles, GLB, CityJSON and IFC coverage where tested |
 | **P1** | **Scenario comparison and exports** | Operational vs scenario comparison, source-backed indicators, versioned evidence, reproducible report/map exports |
 | **P2** | **Extensibility and deployment** | Public tools/plugin contracts, optional adapters, predictable upgrades, licensing/third-party disclosure, deployment and user feedback loop |
+
+## Linux and macOS — planned 2027 experimental candidates
+
+These are **coming soon, not downloadable and not committed to a specific day**. The current AGOT 1.0.5 desktop runtime and installer still contain Windows `.exe` service/PostGIS/GDAL paths, Windows-specific bundling and Windows PATH semantics. A Tauri cross-platform UI compile does not prove that AGOT starts as a real Linux/macOS GIS workstation.
+
+| Operating system | 2027 target | Required platform proof |
+| --- | --- | --- |
+| **Linux x86_64** | AppImage and DEB development candidates; RPM/ARM under evaluation | Native service/embedded PostGIS packaging, libwebkit2gtk-4.1 and GIS libraries, actual Ubuntu/Debian clean install, project recovery, GPU and geoprocessing |
+| **macOS ARM64 and Intel** | App bundle/DMG development candidates | Portable bundled GIS/PostgreSQL binaries, macOS permissions, Apple code signing/notarization, real Apple Silicon and Intel runtime/GPU/upgrade tests |
+| **Automatic host extension updates** | Separate future feature | Trusted QGIS/ArcGIS distribution policy, signing and rollback; website dynamic release listings are **not** installed plugin updates |
+| **Signed desktop automatic updates** | Separate acceptance gate | Cryptographically signed Tauri updater artifacts and validated update manifest per platform, not only GitHub SHA-256 |
+
+The [cross-platform development scripts and 2027 acceptance matrix](https://github.com/aerocorp13/world-twin-agents/blob/ui/premium-glass-workstation-20261030/docs/platforms/CROSS_PLATFORM_2027_ROADMAP.md) are now in the software repository. They run native OS source checks and refuse to make bundles while platform-specific service/GIS runtime blockers remain. Public Linux/macOS installers will be linked only after recorded native acceptance and publication.
 
 ## First vertical: scenario digital twins for African planning
 

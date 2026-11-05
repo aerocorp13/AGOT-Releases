@@ -1,5 +1,7 @@
 # AGOT Desktop Windows 1.0.5 — Preview 1
 
+> **PUBLIC EXPERIMENTAL PRERELEASE · PUBLISHED 5 NOVEMBER 2026.** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) is non-draft and contains all required binary assets, `SHA256SUMS.txt` and `release-evidence.json`, with GitHub-reported SHA-256 digests. Installed-host/model/scientific acceptance, Windows upgrade testing and signed auto-updating remain separate gates.
+
 **Release channel:** Experimental **public GitHub prerelease**; not a stable release.
 **Publishing:** The automated pipeline publishes only after all named assets are uploaded and checked. The release must end with \`isDraft=false\` and \`isPrerelease=true\`.
 
