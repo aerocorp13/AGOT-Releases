@@ -35,6 +35,16 @@ The hash above is the **GitHub release asset digest**, not evidence of a code-si
 
 **Important:** Availability is not the same as end-to-end validation. Exact workflow support depends on configuration, compatible data and the installed engines. Details are in [Capabilities and evidence](docs/CAPABILITY_MATRIX.md) and [Known limits](docs/QUALITY_AND_LIMITATIONS.md).
 
+## Upcoming independently installable GeoAI SDK 0.3.0 and AGOT 1.0.5
+
+**Source work is committed; the new Windows binaries have NOT yet been published.** The GitHub release pipeline is prepared to generate a genuine AGOT Desktop 1.0.5 MSI and ArcGIS Pro 3.7 (.NET 10), QGIS and Python SDK 0.3.0 packages. Its source SHA is [`550e0ff1`](https://github.com/aerocorp13/world-twin-agents/commit/550e0ff1eda949779a996f9ad45d1847118e360b). Do not confuse these implementation notes with download links or tested installers.
+
+- [Standalone GIS + local Ollama host SDK 0.3.0 specification](docs/previews/PLANNED_GEOAI_HOST_SDK_0.3.0.md)
+- [AGOT Desktop 1.0.5 integration changes and remaining acceptance](docs/previews/PLANNED_AGOT_DESKTOP_1.0.5.md)
+- [Owner's exact build, GitHub CLI public-prerelease and release-notes procedure](docs/previews/OWNER_PREVIEW_BUILD_AND_PUBLISH_1.0.5_0.3.0.md)
+
+The host-native QGIS/ArcPy tools work without AGOT Desktop; standalone *local AI planning* requires a separately installed tool-capable Ollama model. AGOT Worlds and database-backed simulations remain connected-only. Official QGIS directory distribution requires a separate GPL-compatible licensing decision. The current published downloads remain the releases shown below until the new binary build is completed.
+
 ## Experimental 1.0.4 and GeoAI host previews
 
 - **[Desktop 1.0.4 experimental MSI](docs/previews/AGOT_DESKTOP_1.0.4_PREVIEW_1.md)** · [Release page](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.4-preview.1): unsigned at inspection, manual evaluation only; not a verified Tauri automatic update.
