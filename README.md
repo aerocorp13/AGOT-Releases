@@ -9,6 +9,15 @@ AGOT brings professional geospatial workflows, versioned operational worlds, hum
 
 [**Browse all published releases**](https://github.com/aerocorp13/AGOT-Releases/releases) · [**Download Preview 3 directly**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
 
+
+<!-- GEOTWINS_CURRENT_PREVIEWS_START -->
+## Current experimental public preview channels
+
+- **AGOT Desktop 1.0.5 Preview 1:** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) — real Windows x64 MSI; full-stack readiness and workstation integration.
+- **GeoTwins Hosts / Python SDK 0.3.0 Preview 1:** [geoai-hosts-v0.3.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1) — ArcGIS Pro 3.7 .NET 10, QGIS, independent native GIS, local Ollama AI planning, Python wheel.
+- **Experimental and not stable:** models, licensed GIS processing, source policy and Windows upgrade behavior require end-user validation. SHA256SUMS checks file bytes, not code signing.
+<!-- GEOTWINS_CURRENT_PREVIEWS_END -->
+
 ## Historical published baseline — Preview 3
 
 | Item | Verified publication |
@@ -34,18 +43,6 @@ The hash above is the **GitHub release asset digest**, not evidence of a code-si
 - **Desktop packaging:** a Windows x64 MSI integrating the application and packaged geospatial runtime dependencies.
 
 **Important:** Availability is not the same as end-to-end validation. Exact workflow support depends on configuration, compatible data and the installed engines. Details are in [Capabilities and evidence](docs/CAPABILITY_MATRIX.md) and [Known limits](docs/QUALITY_AND_LIMITATIONS.md).
-
-## Upcoming independently installable GeoAI SDK 0.3.0 and AGOT 1.0.5
-
-**Windows native build complete; public upload pending at the 5 November 2026 check.** The 1.0.5 Windows MSI and five GIS Hosts / SDK 0.3.0 binaries were compiled from [source `64452231`](https://github.com/aerocorp13/world-twin-agents/commit/64452231cabee5d1e6b6124923c25d1b2d5ebea9). Both GitHub release records currently exist as **drafts with zero uploaded assets**, not live downloadable prereleases. Check [GitHub Releases](https://github.com/aerocorp13/AGOT-Releases/releases) for actual publication status.
-
-- [AGOT Desktop 1.0.5 Preview 1 build and release notes](docs/previews/AGOT_DESKTOP_1.0.5_PREVIEW_1.md)
-- [ArcGIS Pro, QGIS and standalone Python SDK 0.3.0 notes](docs/previews/GEOAI_HOSTS_0.3.0_PREVIEW_1.md)
-- [Candidate binary checksums and sizes](docs/previews/PREVIEW_CANDIDATE_ASSETS_1.0.5_0.3.0.json)
-- [Prerelease publication checklist and limitations](docs/previews/RELEASE_1.0.5_0.3.0_PUBLICATION_CHECKLIST.md)
-- [Owner resumable Windows publish instructions](docs/previews/OWNER_PREVIEW_BUILD_AND_PUBLISH_1.0.5_0.3.0.md)
-
-The older public 1.0.4 and 0.1.0 experimental releases are unaffected. The new packages do not imply signed stable automatic updating, clean Windows upgrade acceptance, real model validation or licensed GIS host certification.
 
 ## Experimental 1.0.4 and GeoAI host previews
 

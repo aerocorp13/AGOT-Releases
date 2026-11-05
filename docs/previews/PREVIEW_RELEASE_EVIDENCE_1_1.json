@@ -1,0 +1,1135 @@
+{
+  "changed_paths": [
+    ".github/workflows/agot-architecture-authority.yml",
+    ".github/workflows/agot-brand-icons.yml",
+    ".github/workflows/agot-geoai-ci.yml",
+    ".github/workflows/agot-release-world-regressions.yml",
+    ".github/workflows/agot-twin-source.yml",
+    ".github/workflows/agot-wedge-ci.yml",
+    ".github/workflows/agot-windows-desktop.yml",
+    ".github/workflows/agot.yml",
+    ".github/workflows/g0-foundations.yml",
+    ".github/workflows/premium-glass-workstation.yml",
+    ".github/workflows/promote-agot-preview-website.yml",
+    ".gitignore",
+    ".kiro/steering/agot-integrated-delivery.md",
+    "AGENTS.md",
+    "AGOT/00_OTHER_REJECTED_OLD_UI_A.webp",
+    "AGOT/00_OTHER_REJECTED_OLD_UI_B.webp",
+    "AGOT/00_REJECTED_CURRENT_UI.webp",
+    "AGOT/01_CANONICAL/USER_SELECTED_VERSION_1.png",
+    "AGOT/01_CANONICAL/USER_SELECTED_VERSION_3D.png",
+    "AGOT/01_CANONICAL/agot_kampala_gis_workstation.png",
+    "AGOT/02_TABS/3D/kampala_3d_gis_operations_workspace.png",
+    "AGOT/02_TABS/Add-In/agot_kampala_planning_gis_dashboard.png",
+    "AGOT/02_TABS/Analysis/kampala_gis_analysis_workstation.png",
+    "AGOT/02_TABS/Catalog/agot_gis_workstation_catalog.png",
+    "AGOT/02_TABS/Edit/agot_gis_parcel_editing_workspace.png",
+    "AGOT/02_TABS/Geoprocessing/kampala_gis_geoprocessing_workspace.png",
+    "AGOT/02_TABS/Home/agot_gis_workstation_dashboard.png",
+    "AGOT/02_TABS/Imagery/kampala_imagery_analysis_workstation.png",
+    "AGOT/02_TABS/Map/agot_gis_workstation_kampala_map.png",
+    "AGOT/02_TABS/Raster/kampala_raster_analysis_gis_workspace.png",
+    "AGOT/02_TABS/Share/agot_kampala_gis_export_workspace.png",
+    "AGOT/02_TABS/Simulation/kampala_urban_growth_simulation_dashboard.png",
+    "AGOT/02_TABS/Twin/agot_kampala_digital_twin_workstation.png",
+    "AGOT/02_TABS/Utility/agot_gis_utility_workstation_dashboard.png",
+    "AGOT/02_TABS/Vector/agot_kampala_gis_vector_workspace.png",
+    "AGOT/02_TABS/View/agot_kampala_gis_workstation_interface.png",
+    "AGOT/03_ADDITIONAL/3D_Twin_Alternative/kampala_3d_digital_twin_studio.png",
+    "AGOT/03_ADDITIONAL/AI_Operations/agot_kampala_ai_operations_dashboard.png",
+    "AGOT/03_ADDITIONAL/Data_Catalog_Alternative/agot_sentinel_2_dataset_dashboard.png",
+    "AGOT/03_ADDITIONAL/EO_Alternative/agot_kampala_remote_sensing_dashboard.png",
+    "AGOT/03_ADDITIONAL/Engineering/agot_engineering_control_center.png",
+    "AGOT/03_ADDITIONAL/Flood_Analysis_Alternative/kampala_flood_risk_workflow_interface.png",
+    "AGOT/03_ADDITIONAL/Kampala_Twin_Alternative/agot_kampala_gis_workstation.png",
+    "AGOT/03_ADDITIONAL/Map_Studio_Alternative/agot_kampala_gis_map_studio.png",
+    "AGOT/03_ADDITIONAL/Operational_Command_Alternate/kampala_geospatial_command_centre.png",
+    "AGOT/03_ADDITIONAL/Operational_Command_Center/kampala_geospatial_command_center.png",
+    "AGOT/03_ADDITIONAL/Simulation_Alternative/agot_kampala_simulation_studio_dashboard.png",
+    "AGOT/03_ADDITIONAL/Zoning_Planning_Alternative/kampala_gis_zoning_workspace.png",
+    "AGOT/04_LIGHT_REFERENCE/modular_open_gis_analyst_kampala_project.png",
+    "AGOT/AGOT_One_Image_Developer_Reference-1.jpg",
+    "AGOT/AGOT_WORKSTATION_UI_IMPLEMENTATION_SPEC.md",
+    "AGOT/REFERENCE_MANIFEST.json",
+    "AGOT/START_HERE.md",
+    "AGOT/VISUAL_INDEX.jpg",
+    "AGOT/Writing.txt",
+    "apps/desktop/index.html",
+    "apps/desktop/package-lock.json",
+    "apps/desktop/package.json",
+    "apps/desktop/src-tauri/Cargo.lock",
+    "apps/desktop/src-tauri/Cargo.toml",
+    "apps/desktop/src-tauri/capabilities/default.json",
+    "apps/desktop/src-tauri/icons/128x128.png",
+    "apps/desktop/src-tauri/icons/128x128@2x.png",
+    "apps/desktop/src-tauri/icons/32x32.png",
+    "apps/desktop/src-tauri/icons/64x64.png",
+    "apps/desktop/src-tauri/icons/Square107x107Logo.png",
+    "apps/desktop/src-tauri/icons/Square142x142Logo.png",
+    "apps/desktop/src-tauri/icons/Square150x150Logo.png",
+    "apps/desktop/src-tauri/icons/Square284x284Logo.png",
+    "apps/desktop/src-tauri/icons/Square30x30Logo.png",
+    "apps/desktop/src-tauri/icons/Square310x310Logo.png",
+    "apps/desktop/src-tauri/icons/Square44x44Logo.png",
+    "apps/desktop/src-tauri/icons/Square71x71Logo.png",
+    "apps/desktop/src-tauri/icons/Square89x89Logo.png",
+    "apps/desktop/src-tauri/icons/StoreLogo.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-anydpi-v26/ic_launcher.xml",
+    "apps/desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher_foreground.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-hdpi/ic_launcher_round.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher_foreground.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-mdpi/ic_launcher_round.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher_foreground.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xhdpi/ic_launcher_round.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_foreground.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xxhdpi/ic_launcher_round.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_foreground.png",
+    "apps/desktop/src-tauri/icons/android/mipmap-xxxhdpi/ic_launcher_round.png",
+    "apps/desktop/src-tauri/icons/android/values/ic_launcher_background.xml",
+    "apps/desktop/src-tauri/icons/icon.icns",
+    "apps/desktop/src-tauri/icons/icon.ico",
+    "apps/desktop/src-tauri/icons/icon.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-20x20@1x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-20x20@2x-1.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-20x20@2x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-20x20@3x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-29x29@1x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-29x29@2x-1.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-29x29@2x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-29x29@3x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-40x40@1x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-40x40@2x-1.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-40x40@2x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-40x40@3x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-512@2x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-60x60@2x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-60x60@3x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-76x76@1x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-76x76@2x.png",
+    "apps/desktop/src-tauri/icons/ios/AppIcon-83.5x83.5@2x.png",
+    "apps/desktop/src-tauri/installer/nsis/header.bmp",
+    "apps/desktop/src-tauri/installer/nsis/sidebar.bmp",
+    "apps/desktop/src-tauri/installer/wix/banner.bmp",
+    "apps/desktop/src-tauri/installer/wix/dialog.bmp",
+    "apps/desktop/src-tauri/src/commands.rs",
+    "apps/desktop/src-tauri/src/desktop_updater.rs",
+    "apps/desktop/src-tauri/src/lib.rs",
+    "apps/desktop/src-tauri/src/runtime.rs",
+    "apps/desktop/src-tauri/tauri.conf.json",
+    "apps/desktop/src/PerformanceBenchmark.tsx",
+    "apps/desktop/src/main.tsx",
+    "desktop/vite.config.ts",
+    "docs/AGOT_BRAND_MARK_HANDOFF.md",
+    "docs/AGOT_DESKTOP_GRADE_V3_EXECUTION.md",
+    "docs/AGOT_DESKTOP_POLISH_V2.md",
+    "docs/AGOT_PREMIUM_GLASS_WORKSTATION_HANDOFF.md",
+    "docs/architecture/AGOT_3D_EXECUTION_LEDGER.md",
+    "docs/architecture/AGOT_GEOAI_GROUNDED_WORLD_INTELLIGENCE_20261031.md",
+    "docs/architecture/AGOT_GEOAI_WORLD_SIMULATION_INTEGRATION_20261102.md",
+    "docs/architecture/AGOT_GEOPROCESSING_TOOLBOX_ENGINE_20261101.md",
+    "docs/architecture/AGOT_GIS_LARGE_DATA_NATIVE_PROVIDERS_20261101.md",
+    "docs/architecture/AGOT_HOME_WORLDS_20261101.md",
+    "docs/architecture/AGOT_IMAGERY_GEOPROCESSING_20261101.md",
+    "docs/architecture/AGOT_MULTI_ENGINE_3D_CONSOLIDATION_20261030.md",
+    "docs/architecture/AGOT_NATIVE_GEOAI_AGENT_HARNESS_20261102.md",
+    "docs/architecture/AGOT_PUBLIC_GEOAI_MODELS_20261101.md",
+    "docs/architecture/AGOT_RASTER_ECW_OFFLINE_GEOPROCESSING_20261101.md",
+    "docs/architecture/AGOT_SCENARIO_WEDGE_IMPLEMENTATION_20261031.md",
+    "docs/architecture/AGOT_THREE_ENGINE_VIEW_RECOVERY_20261030.md",
+    "docs/architecture/AGOT_WEDGE_COMPLETION_LEDGER_20261031.md",
+    "docs/architecture/MULTIWORLD_G1_IMPLEMENTATION_20261030.md",
+    "docs/architecture/RELEASE_STABILIZATION_20261028.md",
+    "docs/architecture/THREE_D_SCENES.md",
+    "docs/architecture/authority/01-audit-and-baseline.md",
+    "docs/architecture/authority/02-architecture-and-decisions.md",
+    "docs/architecture/authority/03-contracts.md",
+    "docs/architecture/authority/04-capabilities-and-pipelines.md",
+    "docs/architecture/authority/05-geoai.md",
+    "docs/architecture/authority/06-delivery-and-verification.md",
+    "docs/architecture/authority/07-durable-agent-workflow-implementation.md",
+    "docs/architecture/authority/08-live-capability-audit-20261104.md",
+    "docs/architecture/authority/09-ai-accelerated-master-development-spec.md",
+    "docs/architecture/authority/10-integrated-delivery-roadmap.md",
+    "docs/architecture/authority/11-ai-agent-execution-contract.md",
+    "docs/architecture/authority/12-integrated-city-tiles-native-agent-wave-20261104.md",
+    "docs/architecture/authority/13-geoai-harness-mds-v3-20261104.md",
+    "docs/architecture/authority/13-native-city-geoai-engineering-gates-20261104.md",
+    "docs/architecture/authority/14-geoai-harness-implementation-checklist-20261104.md",
+    "docs/architecture/authority/15-hb1-multiformat-cartography-and-gis-host-sdk-20261104.md",
+    "docs/architecture/authority/16-hc1-portable-geospatial-agents-source-and-acceptance-20261104.md",
+    "docs/architecture/authority/17-v1.0.4-stabilization-roadmap-20261104.md",
+    "docs/architecture/authority/18-fullstack-integration-and-acceptance-20261105.md",
+    "docs/architecture/authority/18-terra-kiro-v1.0.4-execution-contract-20261104.md",
+    "docs/architecture/authority/19-agot-signed-automatic-updates-release-contract-20261104.md",
+    "docs/architecture/authority/20-v1.0.4-local-attempt-20261104.md",
+    "docs/architecture/authority/README.md",
+    "docs/architecture/authority/full-pass-gates.json",
+    "docs/architecture/authority/implementation-status.json",
+    "docs/architecture/authority/repository-inventory.json",
+    "docs/releases/AGOT_DESKTOP_1.0.2_PREVIEW_3.md",
+    "docs/releases/AGOT_DESKTOP_1.0.5_PREVIEW_1.md",
+    "docs/releases/AGOT_MSI_RECOVERY_AND_PROMOTION_20261030.md",
+    "docs/releases/FLUENT_SYSTEM_ICONS_NOTICE.txt",
+    "docs/releases/GEOAI_HOST_SDK_0.3.0_PREVIEW_1.md",
+    "docs/releases/RELEASE_PIPELINE_1.0.5_0.3.0.md",
+    "docs/releases/THREE_D_RENDERER_NOTICES.txt",
+    "docs/simulation/AGOT_REAL_WORLD_SIMULATION_V2.md",
+    "docs/ui/AGOT_CONCEPT6_1_0_5_INTEGRATION_REPORT_20261105.md",
+    "docs/ui/AGOT_CONCEPT6_DESKTOP_1_0_5_HANDOFF.md",
+    "docs/ui/AGOT_CONCEPT6_MASTER_LOWER_MODULE_SPEC_20261104.md",
+    "docs/ui/AGOT_CONCEPT6_MIGRATION_EVIDENCE_20261104.md",
+    "docs/ui/AGOT_DESKTOP_WORKSTATION_DESIGN_SYSTEM.md",
+    "docs/ui/AGOT_PUBLIC_13_RIBBON_ACCEPTANCE_20261101.md",
+    "docs/ui/AGOT_PUBLIC_GIS_WORKSPACES_AND_INTEGRATIONS_20261101.md",
+    "docs/ui/AGOT_PUBLIC_HOME_PROJECT_PERSISTENCE_20261101.md",
+    "docs/ui/AGOT_PUBLIC_WORKSTATION_13_RIBBONS_20261101.md",
+    "eslint.config.js",
+    "integrations/gis_hosts/README.md",
+    "integrations/gis_hosts/arcgis_pro/GeoTwinsGeoAI.pyt",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/Config.daml",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/GeoTwins.GeoAI.ArcGISPro.csproj",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/GeoTwinsModule.cs",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/GeoTwinsPaneView.xaml",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/GeoTwinsPaneView.xaml.cs",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/GeoTwinsPaneViewModel.cs",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/Properties/AssemblyInfo.cs",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/bin/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.deps.json",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/bin/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.esriAddinX",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/GeoTwins.GeoAI.ArcGISPro.csproj.nuget.dgspec.json",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/GeoTwins.GeoAI.ArcGISPro.csproj.nuget.g.props",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/GeoTwins.GeoAI.ArcGISPro.csproj.nuget.g.targets",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/.NETCoreApp,Version=v10.0.AssemblyAttributes.cs",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.GeneratedMSBuildEditorConfig.editorconfig",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.GlobalUsings.g.cs",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.assets.cache",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.csproj.AssemblyReference.cache",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.csproj.CoreCompileInputs.cache",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.csproj.FileListAbsolute.txt",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.g.resources",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro.sourcelink.json",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwins.GeoAI.ArcGISPro_MarkupCompile.cache",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwinsPaneView.baml",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/GeoTwinsPaneView.g.cs",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/temp_archive/Config.daml",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/temp_archive/Install/Config.daml",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/Release/net10.0-windows/temp_archive/Install/GeoTwins.GeoAI.ArcGISPro.deps.json",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/project.assets.json",
+    "integrations/gis_hosts/arcgis_pro/dotnet/GeoTwins.GeoAI.ArcGISPro/obj/project.nuget.cache",
+    "integrations/gis_hosts/qgis/geotwins_geoai/LICENSE",
+    "integrations/gis_hosts/qgis/geotwins_geoai/__init__.py",
+    "integrations/gis_hosts/qgis/geotwins_geoai/engine.py",
+    "integrations/gis_hosts/qgis/geotwins_geoai/metadata.txt",
+    "integrations/gis_hosts/qgis/geotwins_geoai/plugin.py",
+    "integrations/gis_hosts/qgis/geotwins_geoai/processing_provider.py",
+    "integrations/gis_hosts/sdk/NOTICE.txt",
+    "integrations/gis_hosts/sdk/README.md",
+    "integrations/gis_hosts/sdk/agot_host_sdk.py",
+    "integrations/gis_hosts/sdk/geoai_local_runtime.py",
+    "kernel/contracts/world-version.schema.json",
+    "kernel/crs/index.ts",
+    "kernel/generated/pydantic/contracts.py",
+    "kernel/generated/zod/index.ts",
+    "kernel/storage/index.ts",
+    "migrations/029_world_temporal_query_indexes.sql",
+    "migrations/030_wedge_indicator_facts.sql",
+    "migrations/031_wedge_world_links.sql",
+    "migrations/032_geoai_artifacts.sql",
+    "migrations/033_simulation_studies.sql",
+    "migrations/034_large_vector_files.sql",
+    "migrations/035_pointcloud_files.sql",
+    "migrations/036_geoai_world_promotions.sql",
+    "migrations/037_simulation_world_results.sql",
+    "migrations/038_geoai_local_models_jobs.sql",
+    "migrations/039_hazard_exposure_world_studies.sql",
+    "migrations/040_world_feature_materialization.sql",
+    "migrations/041_world_version_origin_immutability.sql",
+    "migrations/042_world_version_entity_membership.sql",
+    "migrations/043_geoai_approval_execution.sql",
+    "migrations/044_world_state_corrections.sql",
+    "migrations/045_world_version_manual_membership.sql",
+    "migrations/046_geoai_grant_revocation.sql",
+    "migrations/047_geoai_inference_fencing.sql",
+    "migrations/048_geoai_inference_retry_idempotency.sql",
+    "migrations/049_geoai_inference_owner_scope.sql",
+    "migrations/050_geoai_agent_workflow_graph.sql",
+    "migrations/051_agent_runs_owner_scope.sql",
+    "migrations/052_geoai_extended_workflow_budget.sql",
+    "migrations/053_geoai_step_action_receipts.sql",
+    "migrations/054_durable_simulation_jobs.sql",
+    "migrations/055_simulation_job_retry_lineage.sql",
+    "migrations/056_world_bulk_membership.sql",
+    "migrations/057_geoai_regional_study_approvals.sql",
+    "migrations/058_integrated_world_reports.sql",
+    "migrations/059_versioned_world_relationships.sql",
+    "migrations/060_durable_hydrology_model_jobs.sql",
+    "migrations/061_hydrology_restart_checkpoints.sql",
+    "migrations/062_recorded_engineering3d_reports.sql",
+    "migrations/063_engineering3d_observed_comparisons.sql",
+    "migrations/064_geoai_cartography_publications.sql",
+    "migrations/065_geoai_host_sdk.sql",
+    "package-lock.json",
+    "package.json",
+    "platform/build.mjs",
+    "platform/distribution.mjs",
+    "platform/portfolio/assets/agot-mark.svg",
+    "platform/portfolio/corporate-site.css",
+    "platform/portfolio/index.html",
+    "platform/tests/distribution.test.mjs",
+    "pyproject.toml",
+    "requirements.lock",
+    "scripts/acceptance/measure-native-city-gpu.ps1",
+    "scripts/acceptance/run-city-geoai-mission.ps1",
+    "scripts/acceptance/run-real-geoai-workflow.py",
+    "scripts/acceptance/verify-connected-fullstack.py",
+    "scripts/benchmark-tiled-city.mjs",
+    "scripts/build-agot-and-geoai-plugins.ps1",
+    "scripts/build-desktop.ps1",
+    "scripts/build-gis-host-plugins.ps1",
+    "scripts/build-install-gis-host-v2.ps1",
+    "scripts/concept6-dock-persistence.mjs",
+    "scripts/desktop-twin-e2e.mjs",
+    "scripts/desktop-v4-browser.mjs",
+    "scripts/dockview-browser-scenario.mjs",
+    "scripts/generate-tiled-city.mjs",
+    "scripts/package_geoai_hosts.py",
+    "scripts/public-ribbon-acceptance.mjs",
+    "scripts/refresh-installer-branding.ps1",
+    "scripts/releases/build-and-publish-previews.ps1",
+    "scripts/releases/check_public_preview.mjs",
+    "scripts/releases/generate_preview_notes.py",
+    "scripts/releases/github_windows_release.py",
+    "scripts/releases/prepare_public_binary.py",
+    "scripts/releases/prepare_signed_updater_config.py",
+    "scripts/releases/prepare_tauri_update_manifest.py",
+    "scripts/releases/publish_previews.py",
+    "scripts/releases/resolve-project-python.ps1",
+    "scripts/releases/sync_public_preview.py",
+    "scripts/releases/verify-standalone-host-runtime.ps1",
+    "scripts/releases/verify_source_worktree.py",
+    "scripts/three-cesium-browser.mjs",
+    "scripts/validate-concept6-v105.ps1",
+    "scripts/verify-architecture-milestone.ps1",
+    "scripts/verify-geoai-ha1-hb1-hc1.ps1",
+    "scripts/verify-gis-host-pairing.ps1",
+    "scripts/verify-release-identity.py",
+    "scripts/verify-signed-wasm-package.mjs",
+    "scripts/verify-v1.0.4-identity.py",
+    "scripts/verify-v1.0.5-identity.py",
+    "scripts/verify-workstation-backend.py",
+    "scripts/wedge/import_africa_rasters.py",
+    "scripts/wedge/import_aqueduct_rankings.py",
+    "scripts/wedge/import_worldbank_population.py",
+    "scripts/workstation-acceptance.mjs",
+    "scripts/world-registry-browser.mjs",
+    "services/agot/acceptance_gate.py",
+    "services/agot/agent/providers.py",
+    "services/agot/agent/runtime.py",
+    "services/agot/agent/tool_probe.py",
+    "services/agot/agent/tools.py",
+    "services/agot/ai_connections.py",
+    "services/agot/city_tiles_package.py",
+    "services/agot/desktop_raster_import.py",
+    "services/agot/desktop_runtime.py",
+    "services/agot/engineering3d_api.py",
+    "services/agot/engineering3d_comparison.py",
+    "services/agot/engineering3d_core.py",
+    "services/agot/engineering3d_mesh.py",
+    "services/agot/engineering3d_terrain.py",
+    "services/agot/eo/service.py",
+    "services/agot/eo/spectral_indices.py",
+    "services/agot/eo/spectral_statistics.py",
+    "services/agot/eo/stac_desktop.py",
+    "services/agot/eo/upload_api.py",
+    "services/agot/feature_split.py",
+    "services/agot/geo_cartographic_formats.py",
+    "services/agot/geo_documents.py",
+    "services/agot/geo_layouts.py",
+    "services/agot/geo_raster.py",
+    "services/agot/geo_runs.py",
+    "services/agot/geo_worker_service.py",
+    "services/agot/geoai.py",
+    "services/agot/geoai_approval.py",
+    "services/agot/geoai_artifacts.py",
+    "services/agot/geoai_capability_plane.py",
+    "services/agot/geoai_cartography.py",
+    "services/agot/geoai_catalog.py",
+    "services/agot/geoai_city_tiles_tools.py",
+    "services/agot/geoai_compute.py",
+    "services/agot/geoai_engineering3d_comparison_tools.py",
+    "services/agot/geoai_engineering3d_tools.py",
+    "services/agot/geoai_eo.py",
+    "services/agot/geoai_exposure.py",
+    "services/agot/geoai_gis.py",
+    "services/agot/geoai_gpu_policy.py",
+    "services/agot/geoai_harness.py",
+    "services/agot/geoai_host_bridge.py",
+    "services/agot/geoai_joint.py",
+    "services/agot/geoai_multiworld.py",
+    "services/agot/geoai_pointcloud_tools.py",
+    "services/agot/geoai_raster.py",
+    "services/agot/geoai_raster_plan.py",
+    "services/agot/geoai_spatial_plan.py",
+    "services/agot/geoai_specialist_evidence.py",
+    "services/agot/geoai_statistics.py",
+    "services/agot/geoai_system_approvals.py",
+    "services/agot/geoai_system_tools.py",
+    "services/agot/geoai_workflows.py",
+    "services/agot/geoai_world_bridge.py",
+    "services/agot/geoprocessing.py",
+    "services/agot/geoworkflow_api.py",
+    "services/agot/grass_slope_worker.py",
+    "services/agot/hazard_exposure.py",
+    "services/agot/host_pairing.py",
+    "services/agot/hydrology.py",
+    "services/agot/hydrology_jobs.py",
+    "services/agot/ifc_conversion.py",
+    "services/agot/ifc_semantics.py",
+    "services/agot/ingest.py",
+    "services/agot/ingest_worker.py",
+    "services/agot/integrated_reports.py",
+    "services/agot/large_vector.py",
+    "services/agot/large_vector_ogr.py",
+    "services/agot/las_source_crs.py",
+    "services/agot/main.py",
+    "services/agot/object_store.py",
+    "services/agot/ogc_features.py",
+    "services/agot/pointcloud_las.py",
+    "services/agot/project_manifests.py",
+    "services/agot/projects.py",
+    "services/agot/provider_workers.py",
+    "services/agot/scene3d.py",
+    "services/agot/scene_models.py",
+    "services/agot/scene_source_lease.py",
+    "services/agot/scene_source_policy.py",
+    "services/agot/scene_tiling_geodesy.py",
+    "services/agot/security.py",
+    "services/agot/simulation_engine.py",
+    "services/agot/simulation_jobs.py",
+    "services/agot/simulation_kernel.py",
+    "services/agot/simulation_studio.py",
+    "services/agot/simulation_world_bridge.py",
+    "services/agot/tool_registry.py",
+    "services/agot/twin.py",
+    "services/agot/vertical_datum.py",
+    "services/agot/wedge.py",
+    "services/agot/wedge_model.py",
+    "services/agot/workstation_integration.py",
+    "services/agot/world_crs.py",
+    "services/agot/world_feature_materialization.py",
+    "services/agot/world_manifest_contract.py",
+    "services/agot/world_relationships.py",
+    "services/agot/world_scene_bridge.py",
+    "services/agot/world_state_corrections.py",
+    "services/agot/world_version_membership.py",
+    "services/agot/world_workbench.py",
+    "services/agot/worlds.py",
+    "src/assets/agot-mark-compact.svg",
+    "src/assets/agot-mark-dark.svg",
+    "src/assets/agot-mark-light.svg",
+    "src/assets/agot-mark-monochrome.svg",
+    "src/assets/agot-mark.svg",
+    "src/components/studio/AGOTBrandIcon.tsx",
+    "src/components/studio/AGOTIcon.tsx",
+    "src/components/studio/AGOTModuleIcons.tsx",
+    "src/components/studio/AGOTWorkstationShell.tsx",
+    "src/components/studio/CartographicPublishingPanel.tsx",
+    "src/components/studio/CatalogIngestPanel.tsx",
+    "src/components/studio/DesktopUpdateControl.tsx",
+    "src/components/studio/DesktopWindowControls.tsx",
+    "src/components/studio/DockLayout.tsx",
+    "src/components/studio/DockLayoutPersistence.ts",
+    "src/components/studio/DockviewWorkspace.tsx",
+    "src/components/studio/EngineeringWorkspace.tsx",
+    "src/components/studio/FeatureEditorWorkspace.tsx",
+    "src/components/studio/GeoprocessingToolbox.tsx",
+    "src/components/studio/GeoprocessingWorkspace.tsx",
+    "src/components/studio/HazardExposureStudio.tsx",
+    "src/components/studio/HydrologyWorkbench.tsx",
+    "src/components/studio/ImageryWorkbench.tsx",
+    "src/components/studio/LargeVectorWorkbench.tsx",
+    "src/components/studio/NativeProviderWorkbench.tsx",
+    "src/components/studio/OgcFeaturesPanel.tsx",
+    "src/components/studio/ProcessingProvider.tsx",
+    "src/components/studio/ProcessingRecipes.tsx",
+    "src/components/studio/RasterImportWorkbench.tsx",
+    "src/components/studio/RasterProcessingPanel.tsx",
+    "src/components/studio/RegionalSimulationStudio.tsx",
+    "src/components/studio/SharingWorkspace.tsx",
+    "src/components/studio/SimulationMaps.tsx",
+    "src/components/studio/SimulationStudio.tsx",
+    "src/components/studio/SimulationWorkspace.tsx",
+    "src/components/studio/SpectralIndexBuilder.tsx",
+    "src/components/studio/StudioShell.tsx",
+    "src/components/studio/VirtualDataGrid.tsx",
+    "src/components/studio/WedgeComparisonPanel.tsx",
+    "src/components/studio/WorkflowCommandState.tsx",
+    "src/components/studio/WorkspaceContext.tsx",
+    "src/components/studio/WorkspaceDocuments.tsx",
+    "src/components/studio/WorkspaceLayoutRegistry.ts",
+    "src/components/studio/WorkstationMap.tsx",
+    "src/components/studio/WorkstationPrimitives.tsx",
+    "src/components/studio/commandContext.ts",
+    "src/components/studio/commandRegistry.ts",
+    "src/components/studio/desktopGrade.css",
+    "src/components/studio/desktopSurfaces.css",
+    "src/components/studio/desktopUpdateControl.css",
+    "src/components/studio/dockviewWorkspace.css",
+    "src/components/studio/offlineArchiveLibrary.ts",
+    "src/components/studio/offlinePmtiles.ts",
+    "src/components/studio/offlinePmtilesMap.ts",
+    "src/components/studio/processingClient.ts",
+    "src/components/studio/publicProjects.ts",
+    "src/components/studio/vertexEditDraft.ts",
+    "src/components/studio/workstationEvents.ts",
+    "src/components/studio/workstationSystem.css",
+    "src/modules/agent/AgentPage.tsx",
+    "src/modules/agent/DevelopmentReviewAgentPage.tsx",
+    "src/modules/agent/DurableAgentWorkflowPanel.tsx",
+    "src/modules/agent/EOInferencePanel.tsx",
+    "src/modules/agent/GeoAIAgentPanel.tsx",
+    "src/modules/agent/GeoAIAssistant.tsx",
+    "src/modules/agent/GeoAIIntegrationPanel.tsx",
+    "src/modules/agent/GeoAIWorldBridge.tsx",
+    "src/modules/agent/HostPairingPanel.tsx",
+    "src/modules/agent/LocalOnnxWorkbench.tsx",
+    "src/modules/agent/ModelConnections.tsx",
+    "src/modules/agent/integrationContract.ts",
+    "src/modules/api/client.ts",
+    "src/modules/api/gisRuns.ts",
+    "src/modules/cases/GeoWorkflowPanel.tsx",
+    "src/modules/control/TwinPage.tsx",
+    "src/modules/map/OperationalMap.tsx",
+    "src/modules/plugins/PluginManager.tsx",
+    "src/modules/plugins/SignedWasmPluginWorkbench.tsx",
+    "src/modules/plugins/WasmModulePolicy.ts",
+    "src/modules/plugins/WasmPluginWorker.ts",
+    "src/modules/twin/DetailedSceneLayer.ts",
+    "src/modules/twin/DigitalTwinWorkspace.tsx",
+    "src/modules/twin/GlobalCesiumView.tsx",
+    "src/modules/twin/RecordedSceneEngineView.tsx",
+    "src/modules/twin/RecordedTilesetSource.ts",
+    "src/modules/twin/SceneModelImportPanel.tsx",
+    "src/modules/twin/SceneSelection.ts",
+    "src/modules/twin/SceneSourceLease.ts",
+    "src/modules/twin/ThreeDecodedGeometryBudget.ts",
+    "src/modules/twin/ThreeSceneView.tsx",
+    "src/modules/twin/ThreeTerrainMesh.ts",
+    "src/modules/twin/ThreeTilesStreaming.ts",
+    "src/modules/twin/TwinEngineeringComparisonPanel.tsx",
+    "src/modules/twin/TwinEngineeringWorkbench.tsx",
+    "src/modules/twin/VerifiedTileTransport.ts",
+    "src/modules/twin/scenarioInsights.ts",
+    "src/modules/worlds/WedgePilotWorkspace.tsx",
+    "src/modules/worlds/WorldEvidenceWorkbench.tsx",
+    "src/modules/worlds/WorldHazardLineage.tsx",
+    "src/modules/worlds/WorldRegistry.tsx",
+    "src/modules/worlds/WorldRelationshipsPanel.tsx",
+    "src/modules/worlds/WorldSimulationLineage.tsx",
+    "src/modules/worlds/WorldTemporalComparison.tsx",
+    "src/modules/worlds/wedgeReportPdf.ts",
+    "src/modules/worlds/wedgeReportPptx.ts",
+    "src/modules/worlds/worldClient.ts",
+    "src/modules/worlds/worldEntityAdapter.ts",
+    "src/routes/__root.tsx",
+    "src/styles.css",
+    "tests/backend/conftest.py",
+    "tests/backend/test_architecture_authority_security.py",
+    "tests/backend/test_cartographic_classification.py",
+    "tests/backend/test_cartographic_multiformat.py",
+    "tests/backend/test_city_tiles_package.py",
+    "tests/backend/test_desktop_raster_import.py",
+    "tests/backend/test_desktop_terrain_cors.py",
+    "tests/backend/test_disposable_acceptance_gate.py",
+    "tests/backend/test_engineering3d_comparison_full_pass.py",
+    "tests/backend/test_engineering3d_core.py",
+    "tests/backend/test_engineering3d_full_pass.py",
+    "tests/backend/test_engineering3d_mesh.py",
+    "tests/backend/test_engineering3d_terrain.py",
+    "tests/backend/test_engineering3d_terrain_full_pass.py",
+    "tests/backend/test_feature_split.py",
+    "tests/backend/test_geoai_cartography.py",
+    "tests/backend/test_geoai_durable_workflows.py",
+    "tests/backend/test_geoai_graph_tool.py",
+    "tests/backend/test_geoai_host_pairing.py",
+    "tests/backend/test_geoai_host_sdk.py",
+    "tests/backend/test_geoai_inference_leases.py",
+    "tests/backend/test_geoai_integrations.py",
+    "tests/backend/test_geoai_model_connections_eo.py",
+    "tests/backend/test_geoai_multiworld.py",
+    "tests/backend/test_geoai_native_3d_focus.py",
+    "tests/backend/test_geoai_native_agent.py",
+    "tests/backend/test_geoai_native_tool_probe.py",
+    "tests/backend/test_geoai_planning.py",
+    "tests/backend/test_geoai_raster_agent.py",
+    "tests/backend/test_geoai_spatial_plan.py",
+    "tests/backend/test_geoai_verified_approvals.py",
+    "tests/backend/test_geoai_wedge.py",
+    "tests/backend/test_geoai_world_bridge.py",
+    "tests/backend/test_geoai_world_simulation_e2e.py",
+    "tests/backend/test_geoprocessing_expanded.py",
+    "tests/backend/test_geoprocessing_toolbox.py",
+    "tests/backend/test_hazard_exposure.py",
+    "tests/backend/test_hydrology_checkpoint_resume.py",
+    "tests/backend/test_hydrology_contracts.py",
+    "tests/backend/test_hydrology_lifecycle.py",
+    "tests/backend/test_ifc_conversion.py",
+    "tests/backend/test_imagery_desktop_upload.py",
+    "tests/backend/test_ingest.py",
+    "tests/backend/test_integrated_geoai_world_twin_full_pass.py",
+    "tests/backend/test_integrated_world_twin_geoai_simulation.py",
+    "tests/backend/test_large_vector_workflows.py",
+    "tests/backend/test_native_provider_workers.py",
+    "tests/backend/test_object_store.py",
+    "tests/backend/test_ogc_features.py",
+    "tests/backend/test_ogr_large_vectors.py",
+    "tests/backend/test_pointcloud_las.py",
+    "tests/backend/test_portable_geoai_compute.py",
+    "tests/backend/test_project_manifests.py",
+    "tests/backend/test_scene_models_developments.py",
+    "tests/backend/test_scene_tiling_geodesy.py",
+    "tests/backend/test_sharing.py",
+    "tests/backend/test_simulation_jobs.py",
+    "tests/backend/test_simulation_studio.py",
+    "tests/backend/test_simulation_world_bridge.py",
+    "tests/backend/test_spectral_index_derivation.py",
+    "tests/backend/test_stac_desktop.py",
+    "tests/backend/test_versioned_world_relationships.py",
+    "tests/backend/test_vertical_datum.py",
+    "tests/backend/test_wedge_integration.py",
+    "tests/backend/test_wedge_model.py",
+    "tests/backend/test_world_bulk_pipeline.py",
+    "tests/backend/test_world_crs.py",
+    "tests/backend/test_world_evidence_workbench.py",
+    "tests/backend/test_world_feature_materialization.py",
+    "tests/backend/test_world_graph_hydrology_full_pass.py",
+    "tests/backend/test_world_scene_bridge.py",
+    "tests/backend/test_world_state_corrections_api.py",
+    "tests/backend/test_world_temporal_as_of.py",
+    "tests/backend/test_worlds.py",
+    "tests/browser/city-streaming-fixture.ts",
+    "tests/concept6-integrated-v105.test.mjs",
+    "tests/concept6-lower-modules.test.mjs",
+    "tests/desktop-backend-integration.test.mjs",
+    "tests/desktop-branding-startup.test.mjs",
+    "tests/desktop-build-script.test.mjs",
+    "tests/desktop-preflight-db-contract.test.mjs",
+    "tests/desktop-version-upgrade.test.mjs",
+    "tests/dock-layout.test.mjs",
+    "tests/engineering3d-workstation-contract.test.mjs",
+    "tests/fluent-icon-contract.test.mjs",
+    "tests/fullstack-gis-jobs.test.mjs",
+    "tests/geoai-native-three-engineering.test.mjs",
+    "tests/geoai/golden_questions.json",
+    "tests/geoprocessing-toolbox.test.mjs",
+    "tests/geoprocessing/test_native_upload_query_contracts.py",
+    "tests/geoprocessing/test_tool_registry.py",
+    "tests/geoprocessing/test_workstation_processing.py",
+    "tests/hc1-decoded-tile-budget.test.mjs",
+    "tests/hydrology-world-workstation.test.mjs",
+    "tests/offline-pmtiles.test.mjs",
+    "tests/primary-ribbon-integration.test.mjs",
+    "tests/project-python-selection.test.mjs",
+    "tests/public-home-projects.test.mjs",
+    "tests/public-workstation-capabilities.test.mjs",
+    "tests/public-worlds-workbench.test.mjs",
+    "tests/real-data-workspaces.test.mjs",
+    "tests/recorded-tileset-source.test.mjs",
+    "tests/releases/test_preview_promotion.py",
+    "tests/scenario-insights.test.mjs",
+    "tests/scene-source-lease.test.mjs",
+    "tests/signed-plugin-package.test.mjs",
+    "tests/signed-wasm-workstation.test.mjs",
+    "tests/simulation-studio.test.mjs",
+    "tests/test_world_manifest_contract.py",
+    "tests/three-engine-workstation.test.mjs",
+    "tests/three-standalone-tiles.test.mjs",
+    "tests/three-terrain.test.mjs",
+    "tests/toolbar-coverage.test.mjs",
+    "tests/unit/test_app_lifespan.py",
+    "tests/unit/test_geoai_capability_policy.py",
+    "tests/unit/test_geoai_host_discovery.py",
+    "tests/unit/test_geoai_host_v2_contracts.py",
+    "tests/unit/test_geoai_statistics.py",
+    "tests/unit/test_gis_standalone.py",
+    "tests/unit/test_hc1_native_host_addin_contracts.py",
+    "tests/unit/test_hc1_sdk_gpu_contracts.py",
+    "tests/unit/test_preview_release_pipeline.py",
+    "tests/unit/test_release_identity_metadata.py",
+    "tests/unit/test_signed_desktop_updater.py",
+    "tests/unit/test_standalone_local_geoai.py",
+    "tests/unit/test_wedge_aqueduct.py",
+    "tests/unit/test_wedge_model.py",
+    "tests/unit/test_workstation_integration_contracts.py",
+    "tests/verified-tile-transport.test.mjs",
+    "tests/vertex-edit-draft.test.mjs",
+    "tests/viewer-external-tiles-optin.test.mjs",
+    "tests/wedge-pdf.test.mjs",
+    "tests/wedge-pptx.test.mjs",
+    "tests/workstation-design-system.test.mjs",
+    "tests/world-scene-identity.test.mjs",
+    "tests/world-temporal-wedge.test.mjs",
+    "vite.config.ts"
+  ],
+  "comparison_base": "origin/main",
+  "created_at_utc": "2026-11-05T16:31:23.815122+00:00",
+  "desktop": {
+    "assets": [
+      {
+        "name": "AGOT.Desktop_1.0.5_x64_en-US.msi",
+        "sha256": "4c84b5f682cd709996ae6fb8edde07890e9118271816755f1e8ee57b5de251de",
+        "size_bytes": 1408242136
+      }
+    ],
+    "native_installed_acceptance": "not_claimed",
+    "public_prerelease_requested": true,
+    "tag": "v1.0.5-preview.1",
+    "version": "1.0.5"
+  },
+  "hosts": {
+    "assets": [
+      {
+        "name": "GeoTwins.GeoAI.ArcGISPro.esriAddInX",
+        "sha256": "c57975f487100fea2b9c0710f0fbaa81534861aba460b31f3d9563155db6be88",
+        "size_bytes": 42513
+      },
+      {
+        "name": "geotwins_geoai_arcgis_pro_0.3.0.zip",
+        "sha256": "c227933559c23c2f4cdc8ab52deac62966d286d4a3a77c6b8fe83488752d694a",
+        "size_bytes": 24386
+      },
+      {
+        "name": "geotwins_geoai_qgis_0.3.0.zip",
+        "sha256": "9400211b0de85d94a1afadeaa9de6e6dd1c092cc9f7a1d37c21644bdcbdda8d2",
+        "size_bytes": 29877
+      },
+      {
+        "name": "geotwins_geoai_python_sdk_0.3.0.zip",
+        "sha256": "f3ea5469f5118595a7e0c570cba9547558eed0c26544c3adcb2d6d1edcecd6fb",
+        "size_bytes": 13863
+      },
+      {
+        "name": "geotwins_geoai_sdk-0.3.0-py3-none-any.whl",
+        "sha256": "bd6b5370c62806181a6b8427d8cb1b162314cc7c8eb1c8581929bcd4d3c25c06",
+        "size_bytes": 14109
+      }
+    ],
+    "license_status": "restricted_evaluation_no_third_party_redistribution_grant",
+    "licensed_gis_host_acceptance": "not_claimed",
+    "public_prerelease_requested": true,
+    "standalone_ollama_real_model_acceptance": "not_claimed",
+    "tag": "geoai-hosts-v0.3.0-preview.1",
+    "version": "0.3.0"
+  },
+  "publication_tooling_sha": "2668961414a4da4b59aa145c0d20a4a04ccb6f11",
+  "schema": "geotwins.public-preview-release-evidence/1",
+  "source_commits": [
+    {
+      "sha": "64452231cabee5d1e6b6124923c25d1b2d5ebea9",
+      "subject": "fix(windows-release): keep database-dependent GeoAI endpoint test out of early source preflight"
+    },
+    {
+      "sha": "e73718b07738bc65c8f9b91b8fb088fc2d87d0ac",
+      "subject": "fix(build-preflight): execute GeoAI policy catalog regression before expensive PyInstaller freeze"
+    },
+    {
+      "sha": "7aa8b57f32fde26a9e5174886ee9fb30118945f1",
+      "subject": "fix(geoai): separate local workflow policy permission from verified native model readiness"
+    },
+    {
+      "sha": "acce352b2f297a091077b5320cdc8356dccb73de",
+      "subject": "fix(release-python): consistently resolve pinned Python 3.12 venv and locked pytest dependencies"
+    },
+    {
+      "sha": "a960c483da686a44e261bef1433f4b26ddaf81fa",
+      "subject": "test(host-sdk): accept and verify all four deterministic 0.3.0 standalone distributions"
+    },
+    {
+      "sha": "638cc19c8a8f96c34119de89e8a4a217d9a04611",
+      "subject": "fix(release-ci): repair all seven npm test failures from desktop fixture and source UI contracts"
+    },
+    {
+      "sha": "37b67f7d5817cb3155eb13db8f013fcc9c194c57",
+      "subject": "fix(concept6): replace unsupported Fluent DocumentCode20Regular icon"
+    },
+    {
+      "sha": "846d0729d5241a4a8908118252eb5985b404be71",
+      "subject": "fix(preview-release): correct stale 1.0.4 window title gate for desktop 1.0.5"
+    },
+    {
+      "sha": "fafc1ce151342fb97843254a0da8a6ce1e27332d",
+      "subject": "fix(preview-publisher): allow only unstaged regenerated Esri .NET bin/obj outputs without discarding user files"
+    },
+    {
+      "sha": "9d9624c76a921edabb0c49495a6060c1502522af",
+      "subject": "fix(releases): replace outdated planned-preview docs when public binaries are published"
+    },
+    {
+      "sha": "550e0ff1eda949779a996f9ad45d1847118e360b",
+      "subject": "feat(geoai-hosts): independent local Ollama agent SDK, native GIS hosts and complete prerelease pipeline"
+    },
+    {
+      "sha": "7a60ea361c82cc442c171867cf2d6839f5b29bd7",
+      "subject": "test(docs): lock Home/Utility, GeoAI and icon bundle acceptance with truthful v1.0.5 evidence"
+    },
+    {
+      "sha": "c9c7b77a0822eb82c60d5d2eee88e31a726b9814",
+      "subject": "perf(icons): statically import Fluent glyphs for tree-shaken desktop bundle"
+    },
+    {
+      "sha": "8831f7afbbee7bdab4ea0f740711577a3e25264e",
+      "subject": "feat(icons): unify durable GeoAI agent, World evidence and cartography on Fluent registry"
+    },
+    {
+      "sha": "918829a681d37861e832bb482c2fa5d9b1a16683",
+      "subject": "feat(workstation): complete source-backed Home results and Utility jobs workbenches"
+    },
+    {
+      "sha": "25d74339583dbbc262a0c9c8c2f68b053da60e4a",
+      "subject": "docs(workstation): record v1.0.5 per-module integration, test commands and native blockers"
+    },
+    {
+      "sha": "d7f6ec6ce005233c73e6255bc923d13d29dd4aa1",
+      "subject": "style(workstation): centralize semantic chrome tokens and restore project-specific tree state"
+    },
+    {
+      "sha": "376d08c89924da60103bfdb672694d942628d467",
+      "subject": "feat(geoai): show verified agent map beside workflow with real evidence/results deck"
+    },
+    {
+      "sha": "9bf51610e92be5f270c585c0121698ff1dde0a55",
+      "subject": "test(desktop): add Concept 6 v1.0.5 source, 416-case matrix and local MSI gate"
+    },
+    {
+      "sha": "72e63c8189dc08782a7eac9c83540701a1af23ff",
+      "subject": "test(workstation): assert 20-route migration, source-backed panes and Fluent registry integrity"
+    },
+    {
+      "sha": "0c61cce804755d5052c460007e87e89364922f12",
+      "subject": "fix(workstation): functional hydrology timestep selection and clean migrated icon imports"
+    },
+    {
+      "sha": "eae7e72e76f6e11ef66b7c923cb5a40ca689a2e7",
+      "subject": "style(workstation): consolidate GeoAI, Edit, Share, Engineering and Add-In interiors"
+    },
+    {
+      "sha": "7065d7cde7eae2b3ab7303fa9a68eab11e23faff",
+      "subject": "feat(workstations): integrate Concept 6 GeoAI, Edit, Share, Engineering and native host pairing"
+    },
+    {
+      "sha": "af4b251b551cdf92d938682e501379bbfdbbb072",
+      "subject": "feat(3d): migrate recorded multi-engine scene browser, source inspector and evidence deck"
+    },
+    {
+      "sha": "e32ca27a85affdedd9647c4479d6d6ad586489c5",
+      "subject": "feat(workstation): controlled persistent project navigation across all major workspaces"
+    },
+    {
+      "sha": "64d82f31fcf1e790bd0cb493706b7e310fb10c26",
+      "subject": "feat(simulation): migrate all simulation disciplines and durable hydrology job workbench to Concept 6"
+    },
+    {
+      "sha": "6ca36e0232b9561522479fa9d7d03ae47eb21d68",
+      "subject": "build(desktop): align AGOT 1.0.5 installer identity and fix catalog virtual-grid stability"
+    },
+    {
+      "sha": "841b1f81e24773a3601d0be8765d5983f29b5e29",
+      "subject": "feat(fullstack): reconnect actual GIS worker results, session-fenced model probes and desktop worker health"
+    },
+    {
+      "sha": "95a60a9f96660dfaa46199d17c362cb1c6a214ea",
+      "subject": "feat(gis-hosts): real standalone ArcPy/QGIS native processing without AGOT Desktop"
+    },
+    {
+      "sha": "9e631b9c26d36217e396b6e1af7286b3833e9fdf",
+      "subject": "feat(fullstack): unify AGOT installed-service readiness, verified model gating and GeoAI runtime evidence"
+    },
+    {
+      "sha": "350d31e1a161493c221275738f3b0ce522061b31",
+      "subject": "feat(workstations): source-bound simulation readiness and consistent module pane/runtime states"
+    },
+    {
+      "sha": "3c1a06c3a4b3ab5951e5f35901e1d921bfe40b82",
+      "subject": "feat(icons): Fluent semantic icons across core lower modules and owned GIS operation glyphs"
+    },
+    {
+      "sha": "3412a93f255ee0ecd742043e4a52f67fa1d55153",
+      "subject": "feat(catalog): source-backed virtual dataset browser and compact Concept 6 inspector"
+    },
+    {
+      "sha": "49ecdb25b47730aaa4cd4b5d930eeb90eb75195f",
+      "subject": "feat(workstation): source-backed Concept 6 Twin, Home and routed desktop interiors"
+    },
+    {
+      "sha": "9ba5eccf7b088d02a1b8056456d6e6b21034066c",
+      "subject": "style(workstation): consolidate Concept 6 lower-pane rules and add integration contracts"
+    },
+    {
+      "sha": "6f28aadb9e5a4184eda92b4f5ea4baa67bac577e",
+      "subject": "feat(workstation): Concept 6 shared panes and connected specialist module surfaces"
+    },
+    {
+      "sha": "17ce3bea4fc73bb9f65f9832ba53d1174672fa39",
+      "subject": "fix(geoai-host): discover real AGOT Desktop loopback API and expose native pairing UX"
+    },
+    {
+      "sha": "d5ef5cb2f6e4af41006268e6d275dae21fdc88b1",
+      "subject": "fix(host-v2): use named hashtable splatting for child GIS package build"
+    },
+    {
+      "sha": "9783bfe8ce2f96a73678d30ebca6e373897eb085",
+      "subject": "fix(host-v2): robust one-command Windows rebuild and exact ArcGIS package version gate"
+    },
+    {
+      "sha": "fdd6a86771ab23888404af4558018f5ceec26b80",
+      "subject": "build(host-v2): include matching AGOT Desktop backend in one-command native host rebuild"
+    },
+    {
+      "sha": "62a6ad947c2ae956a12cc1a39524357186f39c5e",
+      "subject": "test(host-sdk): distinguish valid empty derived outputs from invalid empty input sources"
+    },
+    {
+      "sha": "50db3e3bb5f4fd7c7df9376e4b15cca52054af91",
+      "subject": "feat(geoai-hosts): integrate V2 native ArcGIS/QGIS workstations, scoped pairing and audited host execution"
+    },
+    {
+      "sha": "a997e9acfa601868620c6c6f79bd851a3ea17cda",
+      "subject": "agot v1.0.4"
+    },
+    {
+      "sha": "c23b79874c5c0ef1cd360991ad2280ac4e79d1b2",
+      "subject": "sdks and plugins"
+    },
+    {
+      "sha": "d1c3359325ff00843b5c0c0eb1f58e59d0a4e508",
+      "subject": "agot worksell update"
+    },
+    {
+      "sha": "8086a1d2c802d25dbe847285946798024f29982f",
+      "subject": "docs(updater): correct local npx Tauri signer generate command argument forwarding"
+    },
+    {
+      "sha": "1523059b5a7612526fca071a9c7bbadc0af92c70",
+      "subject": "test(updater): assert cold-start upgrade is canceled after GIS input and native UI shields editing while MSI applies"
+    },
+    {
+      "sha": "8a028eb40400c121e8405f2b1674ced7a93c1549",
+      "subject": "style(updater): accessible exclusive Windows MSI progress shield protects active GIS state during installation"
+    },
+    {
+      "sha": "c1bf6832eff8f264b7168953e4388492abea8f66",
+      "subject": "safety(updater): block active GIS editing during signed MSI download/install and provide accessible full-screen progress"
+    },
+    {
+      "sha": "980fa9b95b553c0557f8d4eab65852a5bfe1bd51",
+      "subject": "fix(updater): match official Tauri Windows x86_64 target in stable static latest.json and release validation"
+    },
+    {
+      "sha": "5d4bf2aab89cb9f79d9a993c230b93935ccda3a4",
+      "subject": "fix(updater): match official Tauri Windows x86_64 target in stable static latest.json and release validation"
+    },
+    {
+      "sha": "a327f248f262171cd518b53e081df3a0661961ed",
+      "subject": "fix(updater): match official Tauri Windows x86_64 target in stable static latest.json and release validation"
+    },
+    {
+      "sha": "bee1ecf859a31f3738c282b8131855525b9e96bd",
+      "subject": "fix(updater): match official Tauri Windows x86_64 target in stable static latest.json and release validation"
+    },
+    {
+      "sha": "64781acf0e781a69e8b7884b402910bc5315c871",
+      "subject": "fix(updater): match official Tauri Windows x86_64 target in stable static latest.json and release validation"
+    },
+    {
+      "sha": "a73afc0edaf87a728c399642a7dac55da0d8155f",
+      "subject": "safety(updater): defer automatic cold-start upgrade after any user map/project interaction"
+    },
+    {
+      "sha": "60e94ac08f0e666569513bf553db0d248a562687",
+      "subject": "safety(updater): defer automatic cold-start upgrade after any user map/project interaction"
+    },
+    {
+      "sha": "2a6d3c62993076f5461679a409465d8eb3c5757d",
+      "subject": "safety(updater): defer automatic cold-start upgrade after any user map/project interaction"
+    },
+    {
+      "sha": "0c70979678ca744fec3d75977bc462553e457198",
+      "subject": "audit(v1.0.4): record signed updater, native host/plugin release gates WITHOUT marking unexecuted acceptance PASS"
+    },
+    {
+      "sha": "ae8b0976691d9ad6010f439630a9d0f2b1c5408d",
+      "subject": "audit(v1.0.4): record signed updater, native host/plugin release gates WITHOUT marking unexecuted acceptance PASS"
+    },
+    {
+      "sha": "9458445bbe10b498d619d015131180b9218111b2",
+      "subject": "docs(v1.0.4): update canonical MDS, HA1/HB1/HC1 audit, R0-R6 roadmap and R6 signed updater acceptance"
+    },
+    {
+      "sha": "11debaf5bb8f7384af4f6428792e03079bb89799",
+      "subject": "docs(v1.0.4): update canonical MDS, HA1/HB1/HC1 audit, R0-R6 roadmap and R6 signed updater acceptance"
+    },
+    {
+      "sha": "09227a11bce8caed28fb1a643f56877717b9220d",
+      "subject": "docs(v1.0.4): update canonical MDS, HA1/HB1/HC1 audit, R0-R6 roadmap and R6 signed updater acceptance"
+    },
+    {
+      "sha": "9b92719f531de60f835c6c0208ebb7b3ee0c9267",
+      "subject": "docs(v1.0.4): update canonical MDS, HA1/HB1/HC1 audit, R0-R6 roadmap and R6 signed updater acceptance"
+    },
+    {
+      "sha": "0aaa6e4e12f680f2f7e2c45329a05ab306b6054e",
+      "subject": "docs(v1.0.4): update canonical MDS, HA1/HB1/HC1 audit, R0-R6 roadmap and R6 signed updater acceptance"
+    },
+    {
+      "sha": "7332ccb16a25e37d5a0719c4effa0b349c6a91c1",
+      "subject": "docs(v1.0.4): update canonical MDS, HA1/HB1/HC1 audit, R0-R6 roadmap and R6 signed updater acceptance"
+    },
+    {
+      "sha": "f00e3956aeb748277cc700d240ee5c3204931700",
+      "subject": "docs(v1.0.4): update canonical MDS, HA1/HB1/HC1 audit, R0-R6 roadmap and R6 signed updater acceptance"
+    },
+    {
+      "sha": "93bf5e7549c22dc201da85bf9d249aa5477d4012",
+      "subject": "docs(v1.0.4): official Tauri signed auto-update architecture, stable GitHub feed, key management and actual Windows acceptance gates"
+    },
+    {
+      "sha": "b7ebd648a47dc99069913428d527984bb000f387",
+      "subject": "docs(v1.0.4): full Terra/Kiro owner PC instruction for tests, real GIS plugin builds, updater keys, MSI and R0-R6 roadmap"
+    },
+    {
+      "sha": "fc1e00243fbe3d27289bc5bd1f46e6fdee4d27c3",
+      "subject": "ci(v1.0.4): enforce signed updater manifest, public signing config, scheduled native check and safe GUI controls"
+    },
+    {
+      "sha": "0902b5b200436c6dfa6a4b71736f521e91d315fb",
+      "subject": "test(v1.0.4): signed updater config/manifest contracts, automatic checks, no unsigned release, and safe UI installation"
+    },
+    {
+      "sha": "ec1702b73741cacfadcfcfda0166ef0252195a97",
+      "subject": "build(v1.0.4): require owner Tauri signing pair and exact MSI .sig for full GA build; explicit diagnostic-only opt-out"
+    },
+    {
+      "sha": "c87ecdce3e47801ea27f1c36fbc9f3e784a6ee7f",
+      "subject": "security(updater): require signatures bound to exact released version, no downgrades and no plugin in unsigned builds"
+    },
+    {
+      "sha": "48a83c764cadf8db99bb81cc385223f822a08e41",
+      "subject": "security(updater): require signatures bound to exact released version, no downgrades and no plugin in unsigned builds"
+    },
+    {
+      "sha": "861ada7d85d63535aff73a75a5faabf641f0365c",
+      "subject": "release(updater): allow and require signed latest.json/.msi.sig on approved stable GitHub Releases, forbid preview feed promotion"
+    },
+    {
+      "sha": "8bad2ea9e679355a66f16665a3ee4781ecff53c7",
+      "subject": "release(updater): stage latest.json and exact signed MSI .sig for approved stable release, never for preview"
+    },
+    {
+      "sha": "0a29996288191a0b7bef30ece557596fb8160778",
+      "subject": "release(updater): produce exact stable GitHub latest.json from real Tauri-signed Windows MSI without publishing"
+    },
+    {
+      "sha": "543ff51d8813352b7a91fae083b96836f84a9c81",
+      "subject": "build(v1.0.4): sign Tauri MSI updater using ignored owner-public-key overlay and fail closed on missing private key or .sig"
+    },
+    {
+      "sha": "c4aabbadcb651aa262ec4a33a4164aff2fe11d60",
+      "subject": "build(updater): generate private-key-free signed Tauri config overlay from actual owner minisign public key"
+    },
+    {
+      "sha": "2c94d981d906def56577308d196ae901019c5500",
+      "subject": "feat(v1.0.4): integrate signed updater version/approval/progress control into native AGOT titlebar"
+    },
+    {
+      "sha": "e313480d5668bc5e3b212d6650c426150e296714",
+      "subject": "style(v1.0.4): premium non-web enterprise desktop updater titlebar dropdown and progress"
+    },
+    {
+      "sha": "eacfc81b10c32bf66b430ab9f3a291a81955e14d",
+      "subject": "feat(v1.0.4): premium AGOT titlebar signed update status and explicit install control"
+    },
+    {
+      "sha": "5f0639888f848e333709dcedaf00c50aa66c4a23",
+      "subject": "feat(v1.0.4): wire signed Tauri updater native Rust plugin, guarded background scheduler and manual update commands"
+    },
+    {
+      "sha": "b65260db7aad057b366002a15b9864fca2949907",
+      "subject": "feat(v1.0.4): wire signed Tauri updater native Rust plugin, guarded background scheduler and manual update commands"
+    },
+    {
+      "sha": "ec587707297bffbc64abcbf939b5da22a2b71b10",
+      "subject": "feat(v1.0.4): official signed Tauri auto-updater checks stable GitHub feed and installs on safe cold start with GIS service shutdown"
+    },
+    {
+      "sha": "e6380a00c058c3c822e146fbf39cf2b42babe0f5",
+      "subject": "docs(v1.0.4): evidence-based HA1/HB1/HC1 stabilization timeline, remaining R0-R6 gaps and stable release gates"
+    },
+    {
+      "sha": "c1c8c00cf6d3abd86cd4340ae210c3147cdb2244",
+      "subject": "ci(v1.0.4): require matching desktop Tauri/MSI/Cargo release-candidate identity before any build"
+    },
+    {
+      "sha": "7d413dbec3878bb56a20d8257b98248f76d25fa1",
+      "subject": "ci(v1.0.4): require matching desktop Tauri/MSI/Cargo release-candidate identity before any build"
+    },
+    {
+      "sha": "f2b80eaccb67b1272999589d5a135fdb8b8f21f7",
+      "subject": "ci(v1.0.4): require matching desktop Tauri/MSI/Cargo release-candidate identity before any build"
+    },
+    {
+      "sha": "e0a2859346f03c0004f4241977cc4dd13828c6ba",
+      "subject": "build(v1.0.4): preflight version identity and inspect real built Windows MSI ProductVersion/ProductCode/UpgradeCode"
+    },
+    {
+      "sha": "5f6285bab65b67b35e98589bb8c5ade494c3a8ed",
+      "subject": "build(v1.0.4): fail-closed desktop/Tauri/MSI/Cargo version gate and distinct QGIS/ArcGIS plugin identity"
+    },
+    {
+      "sha": "c4839d9604e45e33b5a4ec7116c0458d7116b753",
+      "subject": "build(v1.0.4): align desktop Tauri, MSI Wix, frontend and Cargo release-candidate version metadata"
+    },
+    {
+      "sha": "cf231c67bac399c87e8f57bd90dd830c2af74842",
+      "subject": "build(v1.0.4): align desktop Tauri, MSI Wix, frontend and Cargo release-candidate version metadata"
+    },
+    {
+      "sha": "f1522bc37057a205a31ec7afd7fdbd2a1ead6ff3",
+      "subject": "build(v1.0.4): align desktop Tauri, MSI Wix, frontend and Cargo release-candidate version metadata"
+    },
+    {
+      "sha": "48955e2d0f673ec01f89977ae95b6a502e29aebe",
+      "subject": "build(v1.0.4): align desktop Tauri, MSI Wix, frontend and Cargo release-candidate version metadata"
+    },
+    {
+      "sha": "43d8e14504f0349040d07bccefc3a38a1f561dff",
+      "subject": "test(hc1): require modern ArcGIS Pro 3.7 layout export and source-audited failure rollback across both GIS hosts"
+    },
+    {
+      "sha": "d3fbb9fb607de9e906d503028b57a2418f6d9cb5",
+      "subject": "feat(hc1): use ArcGIS Pro 3.7 native Layout.export/CreateExportFormat API with vector PDF georeference"
+    },
+    {
+      "sha": "372bc8cb7364105086ee143b45ee5b9b3d4c3e7d",
+      "subject": "fix(hc1): roll back completed ArcGIS output class and exports on audit/report failure after approved native tool"
+    },
+    {
+      "sha": "ee5c1824d11c1ee7c8c3160b37d7d7101903cc36",
+      "subject": "fix(hc1): rollback QGIS derived geometry and maps if AGOT audit fails after native completion"
+    },
+    {
+      "sha": "706de3dd2927f330142c7ffb8b8ad52131103c83",
+      "subject": "fix(hc1): align ArcGIS Pro 3.7 native DAML root schema declaration with official Esri add-in templates"
+    },
+    {
+      "sha": "f5088aa6fedb82a50de30a43012dea7da87cec94",
+      "subject": "docs(hc1): supersede stale .NET addon gaps with native source, 10 host GIS tools and single owner Windows full build"
+    }
+  ],
+  "source_repository": "aerocorp13/world-twin-agents",
+  "source_sha": "64452231cabee5d1e6b6124923c25d1b2d5ebea9"
+}
