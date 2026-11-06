@@ -1,5 +1,18 @@
 # AGOT Desktop — public release notes
 
+## Current independent GIS Hosts / SDK v0.4.0 preview — 6 November 2026
+
+The separate [geoai-hosts-v0.4.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1) contains five authentic publicly downloadable host/SDK binaries and SHA-256 evidence, **without an AGOT Desktop MSI**. It supersedes 0.3.0 for new host-only evaluation but does not retroactively alter historical packages.
+
+- **Headless GeoAI Core**: persistent SQLite workflow/jobs, exact source-bound approvals, interruption/recovery records and actual vector GeoPackage artifact validation.
+- **Provider-independent local inference boundary**: Ollama and localhost-compatible llama.cpp, vLLM and MLX adapters in the portable SDK, subject to real model/tool-call acceptance.
+- **QGIS/ArcGIS/standalone artifacts**: compiled ArcGIS Pro 3.7/.NET 10 add-in, ArcGIS Python toolbox, QGIS plugin, Python source ZIP and installable wheel.
+- **No native host certification yet**: source and package checks do not establish real installed model discovery, ArcGIS/QGIS active layer binding, consistent AGOT host pairing or scientific output correctness.
+
+The full [v0.4.0 Markdown release guide](docs/previews/GEOAI_HOSTS_0.4.0_PREVIEW_1.md) describes the precise files, hashes, installation requirements, changes and open validation gates. The GitHub release body and its `RELEASE_NOTES.md` asset are independently versioned; the website renders these latest-release notes dynamically.
+
+---
+
 This page describes **published Windows installers**, not all code present in AGOT's private development repository. Release times are UTC. Each version is a public preview and remains subject to native acceptance testing.
 
 | Channel | Publication | Product version | GitHub tag | Published MSI |
@@ -12,7 +25,7 @@ This page describes **published Windows installers**, not all code present in AG
 
 **Naming note:** Preview 3’s tag is `v1.0.1-preview.3`, but the published release and MSI identify the **application and Windows Installer version as 1.0.2**. This historical discrepancy is recorded rather than silently relabeled.
 
-## Desktop 1.0.5 and GIS Hosts / SDK 0.3.0 — public experimental prereleases
+## Historical 5 November 2026 releases — Desktop 1.0.5 and GIS Hosts / SDK 0.3.0
 
 **Published on 5 November 2026, verified from GitHub's actual release assets.** The 1.0.5 Windows MSI (1,408,242,136 bytes) and all five GIS-host/independent Python SDK binaries are uploaded, non-draft prereleases. GitHub reports exact file sizes, uploaded states and SHA-256 digests; separate `SHA256SUMS.txt` and `release-evidence.json` files accompany each release.
 
