@@ -31,7 +31,7 @@ The release also contains RELEASE_NOTES.md, SHA256SUMS.txt and release-evidence.
 
 **ArcGIS Python toolbox:** Extract the ZIP keeping GeoTwinsGeoAI.pyt next to its SDK modules. Add the Python toolbox through ArcGIS Pro Catalog. Native ArcGIS tools execute under licensed Esri's managed Python environment; do not modify that environment merely to install the separate portable SDK.
 
-**ArcGIS native add-in:** Install the authentic compiled .esriAddinX in supported ArcGIS Pro 3.7 with .NET 10. Independently verify actual dockpane startup, selected layers, tool calls and result receipts.
+**ArcGIS native add-in:** Install the authentic compiled .esriAddInX in supported ArcGIS Pro 3.7 with .NET 10. Independently verify actual dockpane startup, selected layers, tool calls and result receipts.
 
 **Standalone Python SDK:** Install the wheel in an isolated compatible Python environment. Portable vector GIS needs host-specific Fiona, GEOS/Shapely and pyproj/GDAL binary dependencies. No proprietary GIS runtime, model weights or credentials are redistributed.
 
