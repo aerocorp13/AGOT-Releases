@@ -5,20 +5,19 @@
 
 AGOT brings professional geospatial workflows, versioned operational worlds, human-reviewed GeoAI tools, 2D/3D visualization and emerging scenario simulation into one Windows desktop workspace. Our initial focus is **climate-resilient infrastructure and urban planning in data-scarce African contexts**; the architecture is not limited to Africa.
 
-> **Public experimental previews, not stable production software.** The newest confirmed public channels are **AGOT Windows Desktop 1.0.5** and **GIS Hosts/independent SDK 0.3.0**, published 5 November 2026 with GitHub SHA-256 evidence. Installed Windows upgrades, ArcGIS/QGIS host behavior, signed automatic updates and real-model scientific correctness still require separate acceptance. Linux and macOS are **2027 development targets**, not available downloads.
+> **Public experimental previews, not stable production software.** The current public preview channels are **AGOT Windows Desktop 1.0.5** and **GIS Hosts/independent SDK 0.4.0**, most recently published 6 November 2026 with GitHub SHA-256 evidence. Installed Windows upgrades, ArcGIS/QGIS host behavior, signed automatic updates and real-model scientific correctness still require separate acceptance. Linux and macOS are **2027 development targets**, not available downloads.
 
-[**Browse all published releases**](https://github.com/aerocorp13/AGOT-Releases/releases) · [**Download current Windows 1.0.5**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) · [**GIS Host/SDK 0.3.0 packages**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
+[**Browse all published releases**](https://github.com/aerocorp13/AGOT-Releases/releases) · [**Download current Windows 1.0.5**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) · [**GIS Host/SDK 0.4.0 packages**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
 
 
 <!-- GEOTWINS_CURRENT_PREVIEWS_START -->
-## Current experimental public preview channels
+## Current experimental public preview channels — 6 November 2026
 
-- **AGOT Desktop 1.0.5 Preview 1:** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) — real Windows x64 MSI; full-stack readiness and workstation integration.
-- **GeoTwins Hosts / Python SDK 0.3.0 Preview 1:** [geoai-hosts-v0.3.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1) — ArcGIS Pro 3.7 .NET 10, QGIS, independent native GIS, local Ollama AI planning, Python wheel.
-- **Experimental and not stable:** models, licensed GIS processing, source policy and Windows upgrade behavior require end-user validation. SHA256SUMS checks file bytes, not code signing.
+- **AGOT Desktop 1.0.5 Preview 1:** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) — public Windows x64 installer with GitHub SHA-256 evidence, separate from GIS host versions.
+- **GeoAI Hosts + Python SDK 0.4.0 Preview 1:** [geoai-hosts-v0.4.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1) — native ArcGIS Pro add-in, ArcPy toolbox, QGIS plugin, Python wheel and source ZIP, plus durable Core, typed plans and locally executable vector GIS.
+- **Release notes and acceptance boundaries:** [GeoAI Host 0.4.0 detailed notes](docs/previews/GEOAI_HOSTS_0.4.0_PREVIEW_1.md). Package hashes establish bytes, not installed QGIS/ArcGIS, model quality, scientific validity, Windows signing or stable production acceptance.
 
-
-> **Standalone Ollama / layer-selection acceptance notice (6 Nov 2026):** Operators reported that the published 0.3.0 QGIS/ArcGIS host packages can open native tools while failing to discover a running local Ollama model inventory or preselect the active GIS layer. The published binaries are not silently updated. Source-only repairs are in [world-twin-agents PR #21](https://github.com/aerocorp13/world-twin-agents/pull/21) (commits [77f19a9](https://github.com/aerocorp13/world-twin-agents/commit/77f19a9cd54df5586aee4ede1eceb5db7461ed4f) and [4cb8d12](https://github.com/aerocorp13/world-twin-agents/commit/4cb8d12bf1f2c033e4a5b296b20da8d59e3899ea)). **These fixes have not been built, independently tested inside QGIS/ArcGIS Pro, or published as a new version.** Diagnose current machines with `ollama list`, `http://127.0.0.1:11434/api/tags`, and the [local SDK acceptance procedure](https://github.com/aerocorp13/world-twin-agents/blob/ui/premium-glass-workstation-20261030/docs/releases/STANDALONE_GEOAI_OLLAMA_LAYER_INTEGRATION_20261106.md). Local native GIS processing does not require a model; AI planning requires a reachable, tool-capable local Ollama model and explicit source review.
+> **Historical 0.3.0 issue:** Earlier QGIS/ArcGIS add-ins reported local Ollama inventory and active-layer-selection failures. The 0.4.0 source/release includes endpoint discovery improvements and shared Core modules, but live installed-host repair is **not yet independently certified**. Operators must verify their own model inventory, active GIS layers, approval, and actual geoprocessing outputs.
 
 <!-- GEOTWINS_CURRENT_PREVIEWS_END -->
 
