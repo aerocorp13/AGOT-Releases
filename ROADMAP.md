@@ -4,10 +4,10 @@
 
 This roadmap is a **prioritized engineering plan**, not a delivery commitment. No feature below is promised for a specific date, funded pilot or release unless explicitly recorded as published.
 
-## Current public experimental baseline — 5 November 2026
+## Current public experimental baseline — 6 November 2026
 
 - **AGOT Desktop Windows 1.0.5:** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1), an actual 1,408,242,136-byte Windows x64 MSI with uploaded SHA-256 and source provenance. Concept 6 professional GIS workstation, source-backed Worlds and specialist modules, GIS jobs, experimental Twin/Simulation/GeoAI and developing large-scale 3D. This is **published**, not production-certified; clean Windows install and upgrade are separate gates.
-- **GeoAI Hosts and standalone Python SDK 0.3.0:** [geoai-hosts-v0.3.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1), five real binaries: ArcGIS Pro .NET 10 add-in, ArcGIS Python toolbox ZIP, QGIS plugin ZIP, independent Python SDK source ZIP and wheel, plus hashes/evidence. Standalone native host GIS and reviewed local Ollama workflows are distinct from optional connected AGOT mode. Installed Esri/QGIS and model acceptance remain separate.
+- **GeoAI Hosts and standalone Python SDK 0.4.0:** [geoai-hosts-v0.4.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1), five real public artifacts: ArcGIS Pro .NET 10 add-in, ArcGIS Python toolbox ZIP, QGIS plugin ZIP, independent Python SDK source ZIP and wheel. New source includes a durable local Core, typed GIS contracts, model-provider adapters, exact-plan approvals and validated vector outputs. Installed Esri/QGIS, real-model operation and end-to-end AGOT pairing still require independent acceptance; **0.3.0 remains a historical previous release**.
 - **Older Preview 3 (1.0.2):** historical release. These newer public previews supersede it as the latest download choices, but do not imply every source capability is tested in production.
 
 See [release notes](RELEASE_NOTES.md) and [capability matrix](docs/CAPABILITY_MATRIX.md) for specific boundaries.
