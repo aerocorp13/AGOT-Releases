@@ -21,7 +21,7 @@
 | geotwins_geoai_python_sdk_0.4.0.zip | 37,388 | e6ece54572a1bc55dea25b307cdc47f48e03dda5695e87b61aa183d54d3adedc |
 | geotwins_geoai_qgis_0.4.0.zip | 52,815 | 032fcc69be6c19577407638a767ba1defa8019c71d966474928d7dee2109bc04 |
 | geotwins_geoai_arcgis_pro_0.4.0.zip | 47,394 | 7601a80e9cf93efa596ec8d58654807fd5990106367f1d4ddcedc2f6ac3722f0 |
-| GeoTwins.GeoAI.ArcGISPro.esriAddinX | 47,179 | 34e258414936069fdd9484865c3e5312726c8ce8164e2be1247c66d770824e0a |
+| GeoTwins.GeoAI.ArcGISPro.esriAddInX | 47,179 | 34e258414936069fdd9484865c3e5312726c8ce8164e2be1247c66d770824e0a |
 
 The release also contains RELEASE_NOTES.md, SHA256SUMS.txt and release-evidence.json. GitHub digests verify publication bytes; they do not certify Windows code signing, live GIS host compatibility, quality of AI inference or scientific calibration.
 
