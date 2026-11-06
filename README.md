@@ -16,6 +16,10 @@ AGOT brings professional geospatial workflows, versioned operational worlds, hum
 - **AGOT Desktop 1.0.5 Preview 1:** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) — real Windows x64 MSI; full-stack readiness and workstation integration.
 - **GeoTwins Hosts / Python SDK 0.3.0 Preview 1:** [geoai-hosts-v0.3.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.3.0-preview.1) — ArcGIS Pro 3.7 .NET 10, QGIS, independent native GIS, local Ollama AI planning, Python wheel.
 - **Experimental and not stable:** models, licensed GIS processing, source policy and Windows upgrade behavior require end-user validation. SHA256SUMS checks file bytes, not code signing.
+
+
+> **Standalone Ollama / layer-selection acceptance notice (6 Nov 2026):** Operators reported that the published 0.3.0 QGIS/ArcGIS host packages can open native tools while failing to discover a running local Ollama model inventory or preselect the active GIS layer. The published binaries are not silently updated. Source-only repairs are in [world-twin-agents PR #21](https://github.com/aerocorp13/world-twin-agents/pull/21) (commits [77f19a9](https://github.com/aerocorp13/world-twin-agents/commit/77f19a9cd54df5586aee4ede1eceb5db7461ed4f) and [4cb8d12](https://github.com/aerocorp13/world-twin-agents/commit/4cb8d12bf1f2c033e4a5b296b20da8d59e3899ea)). **These fixes have not been built, independently tested inside QGIS/ArcGIS Pro, or published as a new version.** Diagnose current machines with `ollama list`, `http://127.0.0.1:11434/api/tags`, and the [local SDK acceptance procedure](https://github.com/aerocorp13/world-twin-agents/blob/ui/premium-glass-workstation-20261030/docs/releases/STANDALONE_GEOAI_OLLAMA_LAYER_INTEGRATION_20261106.md). Local native GIS processing does not require a model; AI planning requires a reachable, tool-capable local Ollama model and explicit source review.
+
 <!-- GEOTWINS_CURRENT_PREVIEWS_END -->
 
 ## Linux and macOS · coming soon, 2027 target
