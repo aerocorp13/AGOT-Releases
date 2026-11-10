@@ -1,66 +1,79 @@
-# Install, verify and evaluate AGOT Desktop
+# Install and evaluate the current AGOT public previews
 
-**Using the newer experimental 1.0.4 MSI?** Read [Preview 1.0.4 installation and limitations](previews/AGOT_DESKTOP_1.0.4_PREVIEW_1.md) and [next-day acceptance](previews/PREVIEW_ACCEPTANCE_20261105.md). The following 1.0.2 hash and instructions are for historical Preview 3 only.
+**Updated 10 November 2026.** Current distribution channels are **experimental**, not stable or certified for production. This guide covers **AGOT Desktop 1.0.6 Preview 2** and the **independently versioned GeoAI QGIS / ArcGIS Pro / Python SDK 0.6.0 Preview 1**. They are separate downloads. Neither a GitHub release nor an updated GeoTwins website automatically upgrades an installed desktop, QGIS plugin or ArcGIS Pro add-in.
 
-These instructions are for **AGOT Desktop 1.0.2 — Public Preview 3** on Windows x64. It is a pre-release evaluation build; back up important data and prefer a non-critical computer or test environment.
+## 1. Choose the correct published release
 
-## 1. Download the real asset
+| Product | Public release | Files to use |
+| --- | --- | --- |
+| AGOT Desktop Windows x64 | [v1.0.6-preview.2](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.6-preview.2) | `AGOT.Desktop_1.0.6_x64_en-US.msi`, `SHA256SUMS.txt`, `release-evidence.json` |
+| GeoAI GIS hosts and Python SDK | [geoai-hosts-v0.6.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.6.0-preview.1) | QGIS ZIP, ArcGIS Pro .NET `.esriAddInX`, ArcGIS Pro Python companion ZIP, Python SDK wheel and source ZIP |
 
-Go to the [Preview 3 GitHub release](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) and use its **Assets** section. Download:
+The Desktop installer was recorded from source `9a0aa8b41cb7b7339a72296fdd9f6a48374ca77d`; the later Host SDK packages were recorded from `756133f85b21e3e3a1cac3f6c2109683f983f72c`. **They are not the same build**, and private development after either source commit is not part of that artifact.
 
-- **File:** `AGOT.Desktop_1.0.2_x64_en-US.msi`
-- **Published byte size:** 1,394,453,352
-- **GitHub asset digest (SHA-256):** `07203740b2e9196cef0d6216f6a6bfff4fa9b11fbdc86cfa273850ba0cbd0a20`
-- **Product / Windows installer version:** 1.0.2
-- **Release tag:** `v1.0.1-preview.3`
+A separate `v1.0.6-preview.1` entry may appear in repository release APIs as a **draft with no downloadable assets**; do not mistake it for the current published installer.
 
-Do not mistake the small GitHub auto-generated source ZIP for the AGOT desktop application; this public repository is distribution documentation only.
+## 2. Verify downloaded bytes and trust independently
 
-## 2. Check integrity and signing separately
+The public 1.0.6 Preview 2 MSI has recorded size **1,416,188,896 bytes** and SHA-256:
 
-Open PowerShell in the installer directory:
+`59ae2b13f2bddfb7cff5abea1fa090814b572eeeb87fd38bf20211a6182f4df3`
+
+Open **PowerShell 7** in the folder containing the downloaded installer:
 
 ```powershell
-Get-FileHash -LiteralPath ".\AGOT.Desktop_1.0.2_x64_en-US.msi" -Algorithm SHA256
-Get-AuthenticodeSignature -FilePath ".\AGOT.Desktop_1.0.2_x64_en-US.msi" | Format-List Status,SignerCertificate,StatusMessage
+Get-FileHash -LiteralPath ".\AGOT.Desktop_1.0.6_x64_en-US.msi" -Algorithm SHA256
+Get-AuthenticodeSignature -FilePath ".\AGOT.Desktop_1.0.6_x64_en-US.msi" |
+  Format-List Status, SignerCertificate, StatusMessage
 ```
 
-Compare the entire output hash against the **GitHub-published digest** above. A matching digest checks the downloaded bytes against GitHub's asset record; it does not establish malware-free content or author identity. Review the PowerShell signing result yourself. **Code signing was not independently verified for this release.** Windows SmartScreen may warn about unsigned or unfamiliar software.
+Confirm the complete hash matches the value above; compare the release's `SHA256SUMS.txt` and `release-evidence.json` where provided. **At recorded publication the MSI was NotSigned**; matching a hash is not a code signature, and the installer has not received independent clean-machine acceptance here. Never disregard an unexpected signer, installer source or changed checksum.
 
-If the hash differs, **do not run the installer**. Redownload from the official asset and report the issue privately.
+For host assets, consult the [five individually recorded 0.6.0 hashes](previews/GEOAI_HOSTS_0.6.0_PREVIEW_1.md). You can hash a downloaded ZIP, wheel or `.esriAddInX` by replacing the filename above.
 
-## 3. Prepare the environment
+## 3. AGOT Desktop: install, first run and upgrade
 
-- Windows x64, targeting Windows 11; full Windows 10 and clean-machine coverage is not confirmed.
-- Adequate disk space for an approximately 1.30 GiB download, installation and local data.
-- **Microsoft Edge WebView2 Runtime**. The installer may need network access to obtain it if absent.
-- Local GIS/runtime/PostGIS components packaged or configured for the selected workflow.
-- Optional internet connectivity for online basemaps, imagery providers and external services.
-- Optional separately configured local LLM/model service for those GeoAI functions; a compatible user-provided ONNX checkpoint for segmentation.
+1. Back up project data and existing workspaces **before** experimenting. The historical default path documented by earlier previews is `%APPDATA%\af.agot.desktop\runtime-v1`; configured overrides may differ. Confirm your actual workspace path before copying or cleaning anything.
+2. Close the previous AGOT Desktop and background host processes; use the published Windows x64 MSI, not a GitHub auto-generated source ZIP.
+3. Windows 11 x64 and Microsoft Edge **WebView2 Runtime** are the primary target environment. Backend/PostGIS service readiness, disk space and optional basemap internet access depend on the chosen features. LLM weights, API keys and licensed vendor GIS installations are **not** bundled.
+4. Launch and check the exact installed version, local service readiness and project access. Open a *non-sensitive* test GeoJSON/GeoPackage with known CRS, add a real layer and verify the map/attributes. Test native processing only after ensuring sources and engine permissions are valid.
+5. Before upgrading a previous preview, record original version, project IDs, output locations and copies of user data. After installation, reopen the same project and validate layer counts, source IDs, map layout and any saved GIS receipts. Do not assume migration or upgrades are certified.
+6. Treat Worlds, Simulation, Twin, 3D, GPU processing and GeoAI as **capability-specific experimental paths**; a visible tab or local provider status is not evidence of a correct saved scientific result.
 
-No blanket promise of universal hardware compatibility, no-internet operation or automatically available model services is made.
+No signed stable auto-update channel is asserted by these preview uploads.
 
-## 4. Install and first run
+## 4. QGIS 0.6.0: manual plugin installation
 
-1. Close running AGOT Desktop processes.
-2. Back up any older project data first.
-3. Run the MSI and follow Windows Installer prompts. Check the publisher/signing result instead of ignoring unfamiliar prompts.
-4. Launch AGOT Desktop and check whether the local GIS backend and required services report available.
-5. Start with authorized test layers and simple supported mapping operations. Introduce Worlds, approved GeoAI and 3D/model steps only after confirming their requirements.
+Download `geotwins_geoai_qgis_0.6.0.zip` from the tagged **host** release, verify its hash, and inspect the contained license/metadata. Open a compatible installed QGIS version, then use **Plugins → Manage and Install Plugins → Install from ZIP** and select the official ZIP. Depending on QGIS version, menu wording can differ. Restart QGIS, confirm the loaded plugin reports the intended version, and verify the dock/panel and native Processing provider presence.
 
-## 5. Before upgrading from an older preview
+For a real source-to-output check, load a licensed projected roads dataset, choose the exact source, propose a 50-metre buffer, inspect the plan and CRS, approve the GIS effect explicitly, run it and reopen the resulting layer. Verify geometry, feature count, output path and processing receipt. If using a model, configure a compatible local model service separately and check a genuine tool-call response; otherwise use only supported manual operations. This release is **not** a certified official QGIS Plugin Directory installation or automatic upgrade. Native QGIS installed-host testing remains open.
 
-- Close AGOT Desktop.
-- Back up local projects and any custom data directory.
-- **Default workspace identified in Preview 3 notes:** `%APPDATA%\af.agot.desktop\runtime-v1`. A configured override may store data elsewhere.
-- Record current installer version and project IDs.
-- Do not rely on in-place upgrade compatibility or automatic restoration unless you have verified it with your own environment. Stable application identity is an engineering prerequisite, not complete data migration acceptance.
-- Keep safe copies and test open/reopen behavior after upgrade.
+## 5. ArcGIS Pro 0.6.0: native add-in and Python toolbox
 
-There is **no verified automatic desktop updater**. New public releases on geotwins.org or GitHub do not update installed copies.
+On a licensed, compatible Windows ArcGIS Pro installation, download and hash **`GeoTwins.GeoAI.ArcGISPro.esriAddInX`** for the native .NET add-in. The separate `geotwins_geoai_arcgis_pro_0.6.0.zip` is the Python companion/toolbox package; it is **not** a renamed `.esriAddInX`. Close ArcGIS Pro before changing add-in versions; install according to ArcGIS Pro's add-in trust/extension prompts, reopen and check version/toolbar resources. Native API, SDK/.NET compatibility and installation trust must be checked against the actual installed ArcGIS Pro version.
 
-## 6. Report a reproducible problem
+Use authorized feature classes and run one reviewed ArcPy-based operation with exact input and output names. Verify native geoprocessing result, layer addition, approval, receipt and reopen in the GeoAI dock. An explanation in chat or geoprocessing history **without an actual saved output and its original pinned result** is not success. Do not treat old cached ribbon icons as proof that the current package loaded.
 
-Share the version, Windows edition/build, exact MSI filename, attempted task, source format and CRS (if applicable), whether the service/model was configured, and sanitized error or log text. **Never post passwords, access tokens, sensitive location datasets, personal records or private project archives.**
+## 6. Python SDK wheel 0.6.0
 
-Email: [admin@geotwins.org](mailto:admin@geotwins.org). Security concerns: [SECURITY.md](../SECURITY.md). Known blockers: [QUALITY_AND_LIMITATIONS.md](QUALITY_AND_LIMITATIONS.md).
+Download `geotwins_geoai_sdk-0.6.0-py3-none-any.whl` to an isolated Python virtual environment. Confirm its checksum against the host release guide, then install the exact local wheel:
+
+```powershell
+py -3.12 -m venv .venv-geotwins-eval
+.\.venv-geotwins-eval\Scripts\python.exe -m pip install ".\geotwins_geoai_sdk-0.6.0-py3-none-any.whl"
+```
+
+The `geotwins_geoai_python_sdk_0.6.0.zip` is a source archive for inspection and development, not a substitute for the installable wheel. The SDK does not supply ArcGIS Pro, QGIS, a GPU runtime, models, cloud credentials or the AGOT Desktop MSI. Model-provider/MCP integration should be tested only with registered, authorized GIS capabilities and explicit external-data consent.
+
+## 7. Troubleshooting and honest support reports
+
+Record the product/version/tag, downloaded asset SHA-256, OS and exact QGIS/ArcGIS version, local model provider, selected authorized source and CRS, proposed operation, operator grant, native error and whether a **real saved result** exists after reopening. Do not include secrets, access tokens or protected project data in public issues.
+
+- [Desktop 1.0.6 detailed changes / known issues](previews/AGOT_DESKTOP_1.0.6_PREVIEW_2.md)
+- [Host/SDK 0.6.0 changes / hashes / limitations](previews/GEOAI_HOSTS_0.6.0_PREVIEW_1.md)
+- [Release evidence and limitations matrix](CAPABILITY_MATRIX.md)
+- [1.0.7 / 0.7.0 UX and native reliability roadmap](roadmaps/AGOT_1.0.7_GEOAI_HOSTS_0.7.0_UX_RECOVERY.md)
+- [10 November source UI audit](roadmaps/AGOT_1.0.7_0.7.0_SOURCE_UI_AUDIT_20261110.md)
+- [Historical Preview 3](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.1-preview.3) (product version 1.0.2, legacy tag naming)
+
+Contact [admin@geotwins.org](mailto:admin@geotwins.org) or use [GitHub Issues](https://github.com/aerocorp13/AGOT-Releases/issues). For security disclosure use [SECURITY.md](../SECURITY.md).
