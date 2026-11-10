@@ -13,7 +13,8 @@ git checkout ui/premium-glass-workstation-20261030
 git pull origin ui/premium-glass-workstation-20261030
 
 # Tests, exact-source native MSI build, local staging. Does NOT publish.
-.\scripts\releases\build-and-publish-desktop-v106-preview3.ps1 -Jobs 2
+# ReuseFrozenRuntime avoids repeating the already frozen Python backend only if its source manifest matches.
+.\scripts\releases\build-and-publish-desktop-v106-preview3.ps1 -ReuseFrozenRuntime -Jobs 2
 
 # After inspecting successful build evidence, publish verified bytes and docs.
 .\scripts\releases\build-and-publish-desktop-v106-preview3.ps1 -UseExistingBuild -Publish
