@@ -5,27 +5,27 @@
 
 AGOT brings professional geospatial workflows, versioned operational worlds, human-reviewed GeoAI tools, 2D/3D visualization and emerging scenario simulation into one Windows desktop workspace. Our initial focus is **climate-resilient infrastructure and urban planning in data-scarce African contexts**; the architecture is not limited to Africa.
 
-> **Public experimental previews, not stable production software.** The current public preview channels are **AGOT Windows Desktop 1.0.5** and **GIS Hosts/independent SDK 0.4.0**, most recently published 6 November 2026 with GitHub SHA-256 evidence. Installed Windows upgrades, ArcGIS/QGIS host behavior, signed automatic updates and real-model scientific correctness still require separate acceptance. Linux and macOS are **2027 development targets**, not available downloads.
+> **Current public experimental previews (not stable):** AGOT **Windows Desktop 1.0.6 Preview 2** and independent **GeoAI Hosts / Python SDK 0.6.0 Preview 1**, both published 9 November 2026. The five SDK/plugin assets are separate from the desktop MSI. Published download hashes do **not** prove signed builds, installed-host GIS execution, scientific calibration or production readiness. Linux and macOS remain future targets.
 
-[**Browse all published releases**](https://github.com/aerocorp13/AGOT-Releases/releases) · [**Download current Windows 1.0.5**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) · [**GIS Host/SDK 0.4.0 packages**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
-
+[**Browse published releases**](https://github.com/aerocorp13/AGOT-Releases/releases) · [**Desktop 1.0.6 MSI**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.6-preview.2) · [**GeoAI Hosts / SDK 0.6.0**](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.6.0-preview.1) · [**GeoTwins website**](https://geotwins.org) · [**Report a problem**](https://github.com/aerocorp13/AGOT-Releases/issues)
 
 <!-- GEOTWINS_CURRENT_PREVIEWS_START -->
-## Current experimental public preview channels — 6 November 2026
+## Current experimental public preview channels — 9 November 2026
 
-- **AGOT Desktop 1.0.5 Preview 1:** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1) — public Windows x64 installer with GitHub SHA-256 evidence, separate from GIS host versions.
-- **GeoAI Hosts + Python SDK 0.4.0 Preview 1:** [geoai-hosts-v0.4.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1) — native ArcGIS Pro add-in, ArcPy toolbox, QGIS plugin, Python wheel and source ZIP, plus durable Core, typed plans and locally executable vector GIS.
-- **Release notes and acceptance boundaries:** [GeoAI Host 0.4.0 detailed notes](docs/previews/GEOAI_HOSTS_0.4.0_PREVIEW_1.md). Package hashes establish bytes, not installed QGIS/ArcGIS, model quality, scientific validity, Windows signing or stable production acceptance.
+- **AGOT Desktop 1.0.6 Preview 2:** [published Windows x64 MSI](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.6-preview.2) · [What changed / known issues](docs/previews/AGOT_DESKTOP_1.0.6_PREVIEW_2.md) · source-pinned recorded build; unsigned, installed acceptance not certified.
+- **GeoAI Hosts + Python SDK 0.6.0 Preview 1:** [five released packages](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.6.0-preview.1) · [QGIS, ArcGIS and SDK 0.6.0 release notes](docs/previews/GEOAI_HOSTS_0.6.0_PREVIEW_1.md) · 114 source/contract tests reported passing by publisher, **not** native GIS host acceptance.
+- **Next engineering focus:** [AGOT 1.0.7 / Hosts 0.7.0 usability-first roadmap](docs/roadmaps/AGOT_1.0.7_GEOAI_HOSTS_0.7.0_UX_RECOVERY.md) — declutter Home, build one persistent Ask GeoAI dock, give novices a real plain-English-to-output journey, retain professional controls, and repair native geoprocessing / receipts.
+- **Earlier releases:** [Desktop 1.0.5](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1), [SDK 0.5.0](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-host-v0.5.0) and [SDK 0.4.0](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1) are historical, not the newest public preview.
 
-> **Historical 0.3.0 issue:** Earlier QGIS/ArcGIS add-ins reported local Ollama inventory and active-layer-selection failures. The 0.4.0 source/release includes endpoint discovery improvements and shared Core modules, but live installed-host repair is **not yet independently certified**. Operators must verify their own model inventory, active GIS layers, approval, and actual geoprocessing outputs.
+**For website integrators:** The site's current /sdks page discovers versioned GitHub Release metadata and renders the *release body's* text. Publishing this new Markdown does **not automatically insert its text into the website or update a release description**; link these guides explicitly in the site or extend the release-notes ingestion safely.
 
 <!-- GEOTWINS_CURRENT_PREVIEWS_END -->
 
 ## Linux and macOS · coming soon, 2027 target
 
-Linux (AppImage/DEB) and macOS (Apple Silicon and Intel app/DMG) are planned **2027** engineering candidates. They are not currently available for download and have no signed automatic updater channel. The current 1.0.5 runtime still bundles Windows-specific service/PostGIS resources; native OS packaging, GIS/GeoAI tests, project migration, signing and notarization must be independently accepted.
+Linux (AppImage/DEB) and macOS (Apple Silicon and Intel app/DMG) are planned **2027** engineering candidates. They are not currently available for download and have no signed automatic updater channel. The current Windows runtime still bundles Windows-specific service/PostGIS resources; native OS packaging, GIS/GeoAI tests, project migration, signing and notarization must be independently accepted.
 
-Read the [updated 2026–27 product roadmap](ROADMAP.md) and [platform build/preflight engineering plan](https://github.com/aerocorp13/world-twin-agents/blob/ui/premium-glass-workstation-20261030/docs/platforms/CROSS_PLATFORM_2027_ROADMAP.md). The website's live GitHub release checks refresh package **links**, not installed QGIS/ArcGIS extensions.
+Read the [updated product roadmap](ROADMAP.md) and [platform build/preflight engineering plan](https://github.com/aerocorp13/world-twin-agents/blob/ui/premium-glass-workstation-20261030/docs/platforms/CROSS_PLATFORM_2027_ROADMAP.md). The website's live GitHub release checks refresh package **links**, not installed QGIS/ArcGIS extensions.
 
 ## Historical published baseline — Preview 3
 
@@ -79,7 +79,8 @@ This is a **roadmap, not a promise of current capability**. See [Product vision]
 
 | Guide | Purpose |
 | --- | --- |
-| [Release history](RELEASE_NOTES.md) · [Changelog](CHANGELOG.md) | Preview 1 → 2 → 3 and compatibility notes |
+| [Release history](RELEASE_NOTES.md) · [Changelog](CHANGELOG.md) | Latest 1.0.6 / 0.6.0 and older previews, provenance and caveats |
+| [Next UX and engineering roadmap](docs/roadmaps/AGOT_1.0.7_GEOAI_HOSTS_0.7.0_UX_RECOVERY.md) | Proposed Desktop 1.0.7 / hosts 0.7.0 priorities, not announced downloads |
 | [Installation and verification](docs/INSTALLATION.md) | Requirements, SHA-256, backups, upgrade precautions |
 | [Capability matrix](docs/CAPABILITY_MATRIX.md) | Published, conditional, development and future capabilities |
 | [Architecture](docs/ARCHITECTURE.md) | Desktop, GIS services, spatial data, GeoAI and World boundaries |
@@ -96,4 +97,4 @@ This **public repository distributes installers and documentation**, not AGOT's 
 
 Website: [geotwins.org](https://geotwins.org) · Support: [admin@geotwins.org](mailto:admin@geotwins.org) · Responsible security disclosure: [SECURITY.md](SECURITY.md).
 
-_Build-candidate documentation checked 5 November 2026; refer to GitHub release assets for the current publication state. For the authoritative assets and version-specific limitations, always consult the individual GitHub release._
+_Public publication metadata checked 10 November 2026; verify the current files and checksums directly on GitHub._
