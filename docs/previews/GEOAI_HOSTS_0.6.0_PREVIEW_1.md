@@ -11,11 +11,11 @@ Five named, publicly uploaded artifacts are recorded on GitHub:
 
 | Asset | Purpose | Uploaded SHA-256 |
 | --- | --- | --- |
-| \`geotwins_geoai_qgis_0.6.0.zip\` | QGIS GeoAI dock/plugin | \`4b6acc3d582480e38c43205dda0c308e16e01b22b794408fce7044db4e199960\` |
-| \`GeoTwins.GeoAI.ArcGISPro.esriAddInX\` | Native ArcGIS Pro .NET add-in | \`7e4d3fe68b44eebedf74b29bd9303b3dad94260f16b9f1f5e28ea2332db6c9b8\` |
-| \`geotwins_geoai_arcgis_pro_0.6.0.zip\` | ArcGIS Pro Python companion/toolbox | \`b877e5b1d3a2d4bffe75a6d0061c24d4d3eb58f7020b6602c2951e756f37e0fb\` |
-| \`geotwins_geoai_sdk-0.6.0-py3-none-any.whl\` | Python SDK wheel | \`242e9219e47b1c938b5dcd3ee9b605fe82eb4db760f04dec7d5d6c2dff1ad9ab\` |
-| \`geotwins_geoai_python_sdk_0.6.0.zip\` | SDK source distribution | \`ecaece61e816a32d08b3eddd3e789a19a5e7004e8d8f855f4d7c58aeb73a7312\` |
+| `geotwins_geoai_qgis_0.6.0.zip` | QGIS GeoAI dock/plugin | `4b6acc3d582480e38c43205dda0c308e16e01b22b794408fce7044db4e199960` |
+| `GeoTwins.GeoAI.ArcGISPro.esriAddInX` | Native ArcGIS Pro .NET add-in | `7e4d3fe68b44eebedf74b29bd9303b3dad94260f16b9f1f5e28ea2332db6c9b8` |
+| `geotwins_geoai_arcgis_pro_0.6.0.zip` | ArcGIS Pro Python companion/toolbox | `b877e5b1d3a2d4bffe75a6d0061c24d4d3eb58f7020b6602c2951e756f37e0fb` |
+| `geotwins_geoai_sdk-0.6.0-py3-none-any.whl` | Python SDK wheel | `242e9219e47b1c938b5dcd3ee9b605fe82eb4db760f04dec7d5d6c2dff1ad9ab` |
+| `geotwins_geoai_python_sdk_0.6.0.zip` | SDK source distribution | `ecaece61e816a32d08b3eddd3e789a19a5e7004e8d8f855f4d7c58aeb73a7312` |
 
 All five GitHub assets have an uploaded digest. **An uploaded hash establishes asset identity, not model output quality or successful native execution.** This release does **not** contain an AGOT Desktop MSI or licensed Esri/QGIS installations.
 
@@ -47,7 +47,7 @@ The 0.6.0 public release reports **114 automated source/contract tests passed**.
 
 ## Responsible installation and testing
 
-Download from the official tagged release, verify SHA-256 and check compatibility before upgrading. QGIS plugin installation is performed from the local ZIP in the relevant QGIS plugin manager. ArcGIS Pro requires the appropriate installed SDK/host version and the native \`.esriAddInX\`; close the application and ensure older add-in resources are not being reused. Use an isolated environment for the wheel. These packages are evaluation builds, not verified marketplace packages or automatic in-app updates.
+Download from the official tagged release, verify SHA-256 and check compatibility before upgrading. QGIS plugin installation is performed from the local ZIP in the relevant QGIS plugin manager. ArcGIS Pro requires the appropriate installed SDK/host version and the native `.esriAddInX`; close the application and ensure older add-in resources are not being reused. Use an isolated environment for the wheel. These packages are evaluation builds, not verified marketplace packages or automatic in-app updates.
 
 A meaningful first test is: open a real, authorized projected roads layer; choose the exact layer; ask *“Create a 50-metre buffer around these roads, intersect it with my approved project boundary, save the resulting layer and show it on the map.”* Inspect the proposed native plan and source selection, approve explicitly, then verify the created output geometry, features, CRS, saved dataset and visible Results/receipt after reopening. Repeat with an intentionally invalid source and confirm fail-closed, diagnosable behavior. Do not use sensitive project data when the selected model provider could transmit the question externally.
 
