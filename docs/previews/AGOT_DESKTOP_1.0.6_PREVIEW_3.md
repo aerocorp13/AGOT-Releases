@@ -11,7 +11,7 @@
 - **Dockable Ask GeoAI:** A right-edge or floating tool for source-bound review/approval and returned GIS results, sharing the existing registered AGOT geoprocessing executor rather than an unrestricted secondary executor. Cloud transfer requires consent.
 - **Guided and Professional task entry:** Same backend operations, source permissions, saved results and processing history. The UI exposes task-oriented access without hiding professional GIS parameters.
 - **Source-bound mission:** Explicitly pin a verified World → Simulation → Twin → 3D study/scene pair to the managed project. A missing study or scene ID blocks pinning; permissions and source identity must be rechecked on reopen.
-- **Package privacy guard:** The MSI build rejects PostgreSQL cluster data, credentials and operator GIS exports. It now distinguishes a legitimate pgAdmin/Azure dependency directory named `profiles` from AGOT operator profile data, addressing the Preview 3 build failure.
+- **Package privacy guard:** The MSI build rejects PostgreSQL cluster data, credentials and operator GIS exports. The build now excludes upstream **pgAdmin 4** (its bundled Azure/Python packages are unnecessary for the embedded PostgreSQL server) before scanning the MSI runtime, including when reusing a frozen backend. The scanner additionally distinguishes dependency folder names from operator-owned data paths.
 - **Build regression fixes:** Restored accessible Recent projects and Save As labels; TypeScript mission callback now safely narrows nullable persisted IDs.
 
 ## What is **not** claimed
