@@ -4,13 +4,14 @@
 
 This roadmap is a **prioritized engineering plan**, not a delivery commitment. No feature below is promised for a specific date, funded pilot or release unless explicitly recorded as published.
 
-## Current public experimental baseline — 6 November 2026
+## Current public experimental baseline — 9 November 2026
 
-- **AGOT Desktop Windows 1.0.5:** [v1.0.5-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.5-preview.1), an actual 1,408,242,136-byte Windows x64 MSI with uploaded SHA-256 and source provenance. Concept 6 professional GIS workstation, source-backed Worlds and specialist modules, GIS jobs, experimental Twin/Simulation/GeoAI and developing large-scale 3D. This is **published**, not production-certified; clean Windows install and upgrade are separate gates.
-- **GeoAI Hosts and standalone Python SDK 0.4.0:** [geoai-hosts-v0.4.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1), five real public artifacts: ArcGIS Pro .NET 10 add-in, ArcGIS Python toolbox ZIP, QGIS plugin ZIP, independent Python SDK source ZIP and wheel. New source includes a durable local Core, typed GIS contracts, model-provider adapters, exact-plan approvals and validated vector outputs. Installed Esri/QGIS, real-model operation and end-to-end AGOT pairing still require independent acceptance; **0.3.0 remains a historical previous release**.
-- **Older Preview 3 (1.0.2):** historical release. These newer public previews supersede it as the latest download choices, but do not imply every source capability is tested in production.
+- **AGOT Desktop 1.0.6:** [v1.0.6-preview.2](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.6-preview.2), authentic Windows x64 MSI, recorded source `9a0aa8b`, uploaded checksums. [Version-specific changes and limitations](docs/previews/AGOT_DESKTOP_1.0.6_PREVIEW_2.md). Source implementations include more developed Map/3D, GIS, Worlds/Simulation and GeoAI pathways, but clean installation, source-to-output agent missions, GPU performance, signed updates and scientific calibration are **not** field-certified.
+- **Independent GeoAI Hosts / SDK 0.6.0:** [geoai-hosts-v0.6.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.6.0-preview.1), five QGIS/ArcGIS/SDK assets, reported 114 passing source tests, **native host acceptance not yet verified**. [Exact asset inventory and current limitations](docs/previews/GEOAI_HOSTS_0.6.0_PREVIEW_1.md). The installed plugins do not automatically update when the website lists a new release.
+- **Next scoped candidates:** [AGOT 1.0.7 and GeoAI Hosts / SDK 0.7.0 usability-first recovery](docs/roadmaps/AGOT_1.0.7_GEOAI_HOSTS_0.7.0_UX_RECOVERY.md) — these are **proposed targets**, not published versions. First prioritize quiet project Home, one cross-workspace Ask GeoAI dock, real layer/plan/approval/output flow and QGIS/ArcGIS host parity; only then broader specialist capability expansion.
+- **Historical 1.0.5 desktop, 0.5.0 and 0.4.0 SDK previews** remain available for provenance; they are no longer the latest downloads.
 
-See [release notes](RELEASE_NOTES.md) and [capability matrix](docs/CAPABILITY_MATRIX.md) for specific boundaries.
+See [public release notes](RELEASE_NOTES.md), [capability matrix](docs/CAPABILITY_MATRIX.md) and individual GitHub tagged assets for exact shipped evidence.
 
 ## Release gates before broad production claims
 
