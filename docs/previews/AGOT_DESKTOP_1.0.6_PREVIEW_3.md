@@ -24,7 +24,7 @@
 ## Build, verification and publication
 
 1. Check out the clean exact source commit from PR #21 and run `npm test`, `npm run typecheck`, `npm run typecheck:desktop` plus the Python privacy tests.
-2. Build a native Windows x64 MSI with `scripts/build-desktop.ps1 -Bundle msi -Jobs 2`. The mandatory resource scanner must pass. Do **not** use `-SkipTests` for public release evidence.
+2. Build a native Windows x64 MSI with `scripts/build-desktop.ps1 -Bundle msi -Jobs 2`, or run `scripts/releases/build-and-publish-desktop-v106-preview3.ps1 -ReuseFrozenRuntime -Jobs 2` when an earlier frozen backend has a matching checked source manifest. The mandatory resource scanner must pass. Do **not** use `-SkipTests` for public release evidence.
 3. Run the Preview 3 publisher, which reopens the original completed `artifacts.json` and `build.log`, validates that the MSI was produced from the recorded source SHA, inspects MSI ProductVersion 1.0.6, calculates a SHA-256 and checks the upload against GitHub's independent digest.
 4. Stage an experimental GitHub prerelease with `v1.0.6-preview.3`, release notes, `SHA256SUMS.txt`, `release-evidence.json` and the actual MSI. Do not publish if any asset, source hash, test transcript or metadata check fails.
 5. On successful publication, the publisher copies this Markdown into public `AGOT-Releases/docs/previews/AGOT_DESKTOP_1.0.6_PREVIEW_3.md` and updates the public README's preview pointer. This step requires GitHub write authorization.
