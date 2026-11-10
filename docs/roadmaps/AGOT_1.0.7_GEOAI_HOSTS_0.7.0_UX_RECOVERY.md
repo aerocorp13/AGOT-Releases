@@ -1,7 +1,7 @@
 # AGOT 1.0.7 + GeoAI Hosts / SDK 0.7.0 — usability-first recovery roadmap
 
 **Proposed:** 10 November 2026 · **not a published release or version bump**  
-**Inputs:** public Desktop 1.0.6 Preview 2 (source \`9a0aa8b\`), public hosts 0.6.0 Preview 1 (source \`756133f\`), draft private integration [PR #21](https://github.com/aerocorp13/world-twin-agents/pull/21), owner-observed Home and GeoAI usability defects, and the existing source capability/acceptance ledger. The private PR is not public documentation or an open-source license grant.
+**Inputs:** public Desktop 1.0.6 Preview 2 (source `9a0aa8b`), public hosts 0.6.0 Preview 1 (source `756133f`), draft private integration [PR #21](https://github.com/aerocorp13/world-twin-agents/pull/21), owner-observed Home and GeoAI usability defects, and the existing source capability/acceptance ledger. The private PR is not public documentation or an open-source license grant.
 
 ## Product decision
 
@@ -17,7 +17,7 @@
 - Secondary, compact actions: **Ask GeoAI**, **Open map**, **Import data**. Offer 3–5 task templates without long explanations on the landing page.
 - Remove instructional walls, duplicate module grids, technical capability tables, speculative analytics cards, marketing copy and persistent system diagnostics from Home. Tutorials become a discoverable **Learn / Tutorials** destination; operational errors remain in the relevant status or task panel.
 - Show concise one-line context only when useful: project name, last saved, actual location/CRS where available. Never manufacture last-used projects or city metrics.
-- Contextual \`i\` help can appear on hover **and keyboard focus/touch activation**; essential instructions and blocking warnings must never be hover-only. Provide closeable first-run tips and an accessible Help command.
+- Contextual `i` help can appear on hover **and keyboard focus/touch activation**; essential instructions and blocking warnings must never be hover-only. Provide closeable first-run tips and an accessible Help command.
 
 ### GeoAI workspace (Desktop 1.0.7)
 
@@ -32,7 +32,7 @@
 
 ### Example first-time user journey
 
-\`Open project → Ask “Which roads are within 100 metres of schools?” → choose my roads and school points → verify projected units → preview buffer/intersection plan → approve → native operation executes → new layer appears on Map and Results → save → reopen with receipt.\`
+`Open project → Ask “Which roads are within 100 metres of schools?” → choose my roads and school points → verify projected units → preview buffer/intersection plan → approve → native operation executes → new layer appears on Map and Results → save → reopen with receipt.`
 
 If there are no school locations or no authorized source, the assistant explains the specific missing input instead of inventing schools. A planner can perform the same operation manually through Geoprocessing; an expert can modify joins, geometry predicates, CRS and output settings.
 
@@ -50,7 +50,7 @@ If there are no school locations or no authorized source, the assistant explains
 | **P1.3** | Tutorials and support | Separate searchable Learn area, concise context-aware guides, offline help, troubleshooting linked from actual errors |
 | **P1.4** | Release + quality telemetry | No sensitive content upload; evidence-bound build/source identification, crash diagnostics and actual acceptance records |
 
-Use existing \`WorkspaceDocuments\`, \`premiumHome.css\`, \`CustomerTaskLauncher\`, \`AgentPage\`, \`GeoAIAssistant\`, durable task/goal panels, \`DockviewWorkspace\`, project context and registered GIS jobs. **Consolidate** rather than layering new panels on existing panels. The current first-stage task launcher is navigation-oriented; it does not by itself execute an end-to-end workflow.
+Use existing `WorkspaceDocuments`, `premiumHome.css`, `CustomerTaskLauncher`, `AgentPage`, `GeoAIAssistant`, durable task/goal panels, `DockviewWorkspace`, project context and registered GIS jobs. **Consolidate** rather than layering new panels on existing panels. The current first-stage task launcher is navigation-oriented; it does not by itself execute an end-to-end workflow.
 
 ## Version 0.7.0 — SDK / plugins delivery sequence
 
