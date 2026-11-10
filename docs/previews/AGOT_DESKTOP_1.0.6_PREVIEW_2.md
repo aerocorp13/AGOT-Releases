@@ -10,15 +10,15 @@
 
 | Published asset | Bytes | SHA-256 |
 | --- | ---: | --- |
-| \`AGOT.Desktop_1.0.6_x64_en-US.msi\` | 1,416,188,896 | \`59ae2b13f2bddfb7cff5abea1fa090814b572eeeb87fd38bf20211a6182f4df3\` |
+| `AGOT.Desktop_1.0.6_x64_en-US.msi` | 1,416,188,896 | `59ae2b13f2bddfb7cff5abea1fa090814b572eeeb87fd38bf20211a6182f4df3` |
 
-The release also includes \`SHA256SUMS.txt\` and \`release-evidence.json\`. These are actual GitHub-uploaded asset records, not promises of signed installers. The release declaration says **Authenticode: NotSigned**. The installer was uploaded from an existing recorded native build; this documentation update does not rebuild it.
+The release also includes `SHA256SUMS.txt` and `release-evidence.json`. These are actual GitHub-uploaded asset records, not promises of signed installers. The release declaration says **Authenticode: NotSigned**. The installer was uploaded from an existing recorded native build; this documentation update does not rebuild it.
 
 Check your downloaded MSI on Windows:
 
-\`\`\`powershell
+```powershell
 Get-FileHash -Algorithm SHA256 .\AGOT.Desktop_1.0.6_x64_en-US.msi
-\`\`\`
+```
 
 Back up existing projects and local data before upgrading. GitHub's generated “Source code” archives for this *distribution repository* are **not** the private AGOT application source.
 
@@ -32,7 +32,7 @@ These are source-described areas of 1.0.6 engineering, **not a claim that every 
 - **GIS and GeoAI workflow integration:** typed source/CRS-aware processing, reviewed actions, persistent output receipts, and links between project layers, Worlds, Simulation and Twin workflows. A visible capability is not proof of successful end-to-end native execution.
 - **Build and reliability corrections:** better DEM tile identity and checksum diagnostics, GLB classification, source-linked scene replay, TypeScript/JSX repairs, Rust hydraulic build corrections, immutable simulation input handling and additional automated contract tests.
 
-A later draft PR #21 may contain changes that are **not present in this MSI**. Specifically, the published 1.0.6 MSI is bound to \`9a0aa8b\`; later branch HEAD \`756133f\` includes additional ArcGIS icon and host message fixes and must not be retroactively claimed as part of this installed desktop binary.
+A later draft PR #21 may contain changes that are **not present in this MSI**. Specifically, the published 1.0.6 MSI is bound to `9a0aa8b`; later branch HEAD `756133f` includes additional ArcGIS icon and host message fixes and must not be retroactively claimed as part of this installed desktop binary.
 
 ## Known limitations / evaluation cautions
 
