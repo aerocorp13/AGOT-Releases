@@ -1,6 +1,15 @@
 # AGOT Desktop — public release notes
 
-## Current independent GIS Hosts / SDK v0.4.0 preview — 6 November 2026
+## 9 November 2026 — Current public experimental previews
+
+- **AGOT Desktop 1.0.6 Preview 2:** [GitHub release / Windows MSI](https://github.com/aerocorp13/AGOT-Releases/releases/tag/v1.0.6-preview.2) · [human-readable changes, exact SHA-256 and limitations](docs/previews/AGOT_DESKTOP_1.0.6_PREVIEW_2.md). Published 17:33 UTC; source `9a0aa8b41cb7b7339a72296fdd9f6a48374ca77d`. Asset `AGOT.Desktop_1.0.6_x64_en-US.msi`, 1,416,188,896 bytes, SHA-256 `59ae2b13f2bddfb7cff5abea1fa090814b572eeeb87fd38bf20211a6182f4df3`. Recorded unsigned, not stable or clean-machine certified.
+- **GeoAI Hosts / Python SDK 0.6.0 Preview 1:** [GitHub release / five GIS + SDK assets](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.6.0-preview.1) · [detailed 0.6.0 host notes and hashes](docs/previews/GEOAI_HOSTS_0.6.0_PREVIEW_1.md). Published 17:33 UTC; source `756133f85b21e3e3a1cac3f6c2109683f983f72c`. Publisher reports 114 automated source/contract tests passed, **native QGIS and licensed ArcGIS Pro acceptance still pending**.
+- **Next target scopes, not releases:** [1.0.7 Desktop / 0.7.0 SDK usability and reliability recovery](docs/roadmaps/AGOT_1.0.7_GEOAI_HOSTS_0.7.0_UX_RECOVERY.md). No binaries, delivery dates, production validation, or signed automatic-updater support are implied by this roadmap.
+
+**Important source distinction:** the 1.0.6 MSI is tied to an earlier source commit than the independently published 0.6.0 host packages. Later draft PR #21 commits cannot be assumed included in the already-uploaded MSI. Website version discovery uses GitHub release bodies and assets; standalone Markdown guides need explicit website links.
+
+
+## Historical GIS Hosts / SDK v0.4.0 preview — 6 November 2026
 
 The separate [geoai-hosts-v0.4.0-preview.1](https://github.com/aerocorp13/AGOT-Releases/releases/tag/geoai-hosts-v0.4.0-preview.1) contains five authentic publicly downloadable host/SDK binaries and SHA-256 evidence, **without an AGOT Desktop MSI**. It supersedes 0.3.0 for new host-only evaluation but does not retroactively alter historical packages.
 
@@ -9,7 +18,7 @@ The separate [geoai-hosts-v0.4.0-preview.1](https://github.com/aerocorp13/AGOT-R
 - **QGIS/ArcGIS/standalone artifacts**: compiled ArcGIS Pro 3.7/.NET 10 add-in, ArcGIS Python toolbox, QGIS plugin, Python source ZIP and installable wheel.
 - **No native host certification yet**: source and package checks do not establish real installed model discovery, ArcGIS/QGIS active layer binding, consistent AGOT host pairing or scientific output correctness.
 
-The full [v0.4.0 Markdown release guide](docs/previews/GEOAI_HOSTS_0.4.0_PREVIEW_1.md) describes the precise files, hashes, installation requirements, changes and open validation gates. The GitHub release body and its `RELEASE_NOTES.md` asset are independently versioned; the website renders these latest-release notes dynamically.
+The full [v0.4.0 Markdown release guide](docs/previews/GEOAI_HOSTS_0.4.0_PREVIEW_1.md) describes the precise files, hashes, installation requirements, changes and open validation gates. The website's live channel reads current GitHub release metadata; this older 0.4.0 guide remains a historical reference.
 
 ---
 
