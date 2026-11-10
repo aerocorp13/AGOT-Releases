@@ -19,6 +19,8 @@ AGOT brings professional geospatial workflows, versioned operational worlds, hum
 
 **For website integrators:** The site's current /sdks page discovers versioned GitHub Release metadata and renders the *release body's* text. Publishing this new Markdown does **not automatically insert its text into the website or update a release description**; link these guides explicitly in the site or extend the release-notes ingestion safely.
 
+**Start with the current documentation:** [Install & verify Desktop 1.0.6 / host 0.6.0](docs/INSTALLATION.md) · [Current capability and evidence matrix](docs/CAPABILITY_MATRIX.md) · [Detailed source review: why Home and GeoAI need redesign](docs/roadmaps/AGOT_1.0.7_0.7.0_SOURCE_UI_AUDIT_20261110.md). These are public Markdown guides, **not** claims that the unpublished 1.0.7/0.7.0 targets are ready.
+
 <!-- GEOTWINS_CURRENT_PREVIEWS_END -->
 
 ## Linux and macOS · coming soon, 2027 target
